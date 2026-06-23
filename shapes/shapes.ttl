@@ -1,6 +1,6 @@
 @prefix edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#> .
 @prefix edintzone: <http://vocab.linkeddata.es/datosabiertos/def/commons/zone#> .
-@prefix estraf: <http://vocab.ciudadesabiertas.es/def/transporte/trafico#> .
+@prefix edinttraf: <http://vocab.ciudadesabiertas.es/def/transporte/trafico#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix s4auto: <https://saref.etsi.org/saref4auto/Vehicle/> .
 @prefix schema: <https://schema.org/> .
@@ -78,9 +78,9 @@
     sh:targetClass edintveh:Owner .
 
 <https://astrea.linkeddata.es/shapes#9d99bc61f4e3dcb7330a8ed6202c8715> a sh:PropertyShape ;
-    sh:class estraf:Tramo ;
+    sh:class edinttraf:StreetSection ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path estraf:via .
+    sh:path edinttraf:via .
 
 <https://astrea.linkeddata.es/shapes#9e9cb48c1174c31afed273d1a674e5ba> a sh:NodeShape ;
     sh:nodeKind sh:IRI ;
@@ -112,7 +112,7 @@
 
 <https://astrea.linkeddata.es/shapes#c91a2fd84c60bb353d8e5b8980436faf> a sh:NodeShape ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass estraf:Tramo .
+    sh:targetClass edinttraf:StreetSection .
 
 <https://astrea.linkeddata.es/shapes#dc56854fa1dafb00093a6260ea3b57a5> a sh:NodeShape ;
     rdfs:label "Vehicle"@en,
@@ -144,7 +144,7 @@
         "authorises in segment"@en,
         "Identifica el segmento de vía para el cual la autorización da permiso para pasar o aparcar"@es,
         "autoriza en tramo"@es ;
-    sh:class estraf:Tramo ;
+    sh:class edinttraf:StreetSection ;
     sh:description "It identifies a segment where the permit authorises the vehicle to go through or park"@en,
         "authorises in segment"@en,
         "Identifica el segmento de vía para el cual la autorización da permiso para pasar o aparcar"@es ;
