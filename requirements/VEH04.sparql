@@ -4,7 +4,7 @@
 
 
 PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
-PREFIX trafico: <http://vocab.ciudadesabiertas.es/def/transporte/trafico#>
+PREFIX trafico: <http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#>
 
 SELECT ?permit ?segment
 WHERE {
