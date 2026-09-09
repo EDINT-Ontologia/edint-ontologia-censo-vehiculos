@@ -1,26 +1,30 @@
-@prefix : <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#> .
+@prefix : <https://edint.es/def/censovehiculos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#> .
+@base <https://edint.es/def/censovehiculos#> .
 
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos> rdf:type owl:Ontology ;
-                                                                          owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos/0.1.0> ;
-                                                                          <http://purl.org/dc/terms/created> "2026-01-29"^^xsd:date ;
-                                                                          <http://purl.org/dc/terms/creator> "Daniel Doña"@es ,
-                                                                                                             "Edna Ruckhaus" ,
-                                                                                                             "Lucía Sánchez" ,
-                                                                                                             "Maria del Socorro Bernardos" ,
-                                                                                                             "Oscar Corcho" ;
-                                                                          <http://purl.org/dc/terms/description> "El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales del censo o registro de vehículos. Su alcance se limita a los datos que pueden ser utilizados con los propósitos de cobro de impuestos por parte de las entidades locales o de gestión de la movilidad (permisos de aparcamiento, permisos de acceso a zonas específicas, etc.), que son parte de las funciones habituales de las entidades locales. Quedan fuera del alcance de la ontología otros aspectos relacionados con los vehículos, como pueden ser los datos de sus permisos de circulación, inspecciones técnicas, etc., que podrían ser objeto de una extensión de esta ontología o de su evolución en el futuro, si se considera relevante."@es ,
-                                                                                                                 "The purpose of this ontology is to provide a common vocabulary for representing the main entities and data of the vehicle census or registry. Its scope is limited to the data that may be used for purposes such as tax collection by local authorities or mobility management (parking permits, access permits to specific zones, etc.), which are part of the usual functions of local entities. Other aspects related to vehicles, such as data concerning driving permits, technical inspections, and similar information, are outside the scope of this ontology. These could be addressed through an extension of this ontology or through its future evolution, if considered relevant."@en ;
-                                                                          <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos.owl" ;
-                                                                          <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                                                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintveh" ;
-                                                                          <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
-                                                                          owl:versionInfo "0.1.0" .
+<https://edint.es/def/censovehiculos> rdf:type owl:Ontology ;
+                                       owl:versionIRI <https://edint.es/def/censovehiculos> ;
+                                       <http://purl.org/dc/terms/created> "2026-01-29"^^xsd:date ;
+                                       <http://purl.org/dc/terms/creator> "Daniel Doña"@es ,
+                                                                          "Edna Ruckhaus" ,
+                                                                          "Lucía Sánchez" ,
+                                                                          "Maria del Socorro Bernardos" ,
+                                                                          "Oscar Corcho" ;
+                                       <http://purl.org/dc/terms/description> "El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales del censo o registro de vehículos. Su alcance se limita a los datos que pueden ser utilizados con los propósitos de cobro de impuestos por parte de las entidades locales o de gestión de la movilidad (permisos de aparcamiento, permisos de acceso a zonas específicas, etc.), que son parte de las funciones habituales de las entidades locales. Quedan fuera del alcance de la ontología otros aspectos relacionados con los vehículos, como pueden ser los datos de sus permisos de circulación, inspecciones técnicas, etc., que podrían ser objeto de una extensión de esta ontología o de su evolución en el futuro, si se considera relevante."@es ,
+                                                                              "The purpose of this ontology is to provide a common vocabulary for representing the main entities and data of the vehicle census or registry. Its scope is limited to the data that may be used for purposes such as tax collection by local authorities or mobility management (parking permits, access permits to specific zones, etc.), which are part of the usual functions of local entities. Other aspects related to vehicles, such as data concerning driving permits, technical inspections, and similar information, are outside the scope of this ontology. These could be addressed through an extension of this ontology or through its future evolution, if considered relevant."@en ;
+                                       <http://purl.org/dc/terms/hasFormat> "https://edint.es/def/censovehiculos.owl" ;
+                                       <http://purl.org/dc/terms/issued> "2026-01-29"^^xsd:date ;
+                                       <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                       <http://purl.org/dc/terms/title> "Ontología del Censo de Vehículos"@es ,
+                                                                        "Vehicle Census Ontology"@en ;
+                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintveh" ;
+                                       <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                       owl:priorVersion <https://github.com/EDINT-Ontologia/edint-ontologia-censo-vehiculos/releases/tag/v0.2.1-test> ;
+                                       owl:versionInfo "0.2.2" .
 
 #################################################################
 #    Annotation properties
@@ -44,6 +48,10 @@
 
 ###  http://purl.org/dc/terms/hasFormat
 <http://purl.org/dc/terms/hasFormat> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
@@ -90,17 +98,21 @@ xsd:dateTime owl:equivalentClass xsd:date .
 #    Object Properties
 #################################################################
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#authorisesInSegment
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+
+
+###  https://edint.es/def/censovehiculos#authorisesInSegment
 :authorisesInSegment rdf:type owl:ObjectProperty ;
                      rdfs:domain :Permit ;
-                     rdfs:range <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo> ;
+                     rdfs:range <hhttps://edint.es/def/trafico#StreetSection> ;
                      rdfs:comment "Identifica el segmento de vía para el cual la autorización da permiso para pasar o aparcar"@es ,
                                   "It identifies a segment where the permit authorises the vehicle to go through or park"@en ;
                      rdfs:label "authorises in segment"@en ,
                                 "autoriza en tramo"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#authorisesVehicle
+###  https://edint.es/def/censovehiculos#authorisesVehicle
 :authorisesVehicle rdf:type owl:ObjectProperty ;
                    rdfs:domain :Permit ;
                    rdfs:range :Vehicle ;
@@ -110,13 +122,13 @@ xsd:dateTime owl:equivalentClass xsd:date .
                               "autoriza vehículo"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#environmentalBadge
+###  https://edint.es/def/censovehiculos#environmentalBadge
 :environmentalBadge rdf:type owl:ObjectProperty ;
                     rdfs:domain :Vehicle ;
                     rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                       [ rdf:type owl:Restriction ;
                                                         owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                        owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleEnvironmentalBadge>
+                                                        owl:hasValue <https://edint.es/kos/VehicleEnvironmentalBadge>
                                                       ]
                                                     ) ;
                                  rdf:type owl:Class
@@ -127,7 +139,7 @@ xsd:dateTime owl:equivalentClass xsd:date .
                                "environmental badge"@en .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitOwner
+###  https://edint.es/def/censovehiculos#permitOwner
 :permitOwner rdf:type owl:ObjectProperty ;
              rdfs:domain :Permit ;
              rdfs:range :Owner ;
@@ -137,13 +149,13 @@ xsd:dateTime owl:equivalentClass xsd:date .
                         "titular autorización"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitPeriodicity
+###  https://edint.es/def/censovehiculos#permitPeriodicity
 :permitPeriodicity rdf:type owl:ObjectProperty ;
                    rdfs:domain :Permit ;
                    rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                      [ rdf:type owl:Restriction ;
                                                        owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                       owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitPeriodicity>
+                                                       owl:hasValue <https://edint.es/kos/VehiclePermitPeriodicity>
                                                      ]
                                                    ) ;
                                 rdf:type owl:Class
@@ -154,13 +166,13 @@ xsd:dateTime owl:equivalentClass xsd:date .
                               "permit periodicity"@en .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitStatus
+###  https://edint.es/def/censovehiculos#permitStatus
 :permitStatus rdf:type owl:ObjectProperty ;
               rdfs:domain :Permit ;
               rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                  owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitStatus>
+                                                  owl:hasValue <https://edint.es/kos/VehiclePermitStatus>
                                                 ]
                                               ) ;
                            rdf:type owl:Class
@@ -171,13 +183,13 @@ xsd:dateTime owl:equivalentClass xsd:date .
                          "permit status"@en .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitType
+###  https://edint.es/def/censovehiculos#permitType
 :permitType rdf:type owl:ObjectProperty ;
             rdfs:domain :Permit ;
             rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                               [ rdf:type owl:Restriction ;
                                                 owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType>
+                                                owl:hasValue <https://edint.es/kos/VehiclePermitType>
                                               ]
                                             ) ;
                          rdf:type owl:Class
@@ -188,13 +200,13 @@ xsd:dateTime owl:equivalentClass xsd:date .
                        "tipo de autorizacion"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#propulsionType
+###  https://edint.es/def/censovehiculos#propulsionType
 :propulsionType rdf:type owl:ObjectProperty ;
                 rdfs:domain :Vehicle ;
                 rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                   [ rdf:type owl:Restriction ;
                                                     owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                    owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePropulsionType>
+                                                    owl:hasValue <https://edint.es/kos/VehiclePropulsionType>
                                                   ]
                                                 ) ;
                              rdf:type owl:Class
@@ -205,7 +217,7 @@ xsd:dateTime owl:equivalentClass xsd:date .
                            "tipo de propulsión"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#registeredOwner
+###  https://edint.es/def/censovehiculos#registeredOwner
 :registeredOwner rdf:type owl:ObjectProperty ;
                  rdfs:domain :Vehicle ;
                  rdfs:range :Owner ;
@@ -215,13 +227,13 @@ xsd:dateTime owl:equivalentClass xsd:date .
                             "titular registrado"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#vehicleType
+###  https://edint.es/def/censovehiculos#vehicleType
 :vehicleType rdf:type owl:ObjectProperty ;
              rdfs:domain :Vehicle ;
              rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                 owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleType>
+                                                 owl:hasValue <https://edint.es/kos/VehicleType>
                                                ]
                                              ) ;
                           rdf:type owl:Class
@@ -232,15 +244,11 @@ xsd:dateTime owl:equivalentClass xsd:date .
                         "vehicle type"@en .
 
 
-###  http://www.w3.org/2004/02/skos/core#inScheme
-<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
-
-
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#activationDate
+###  https://edint.es/def/censovehiculos#activationDate
 :activationDate rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Permit ;
                 rdfs:range xsd:date ;
@@ -250,7 +258,7 @@ xsd:dateTime owl:equivalentClass xsd:date .
                            "Fecha de activación"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#beginningDate
+###  https://edint.es/def/censovehiculos#beginningDate
 :beginningDate rdf:type owl:DatatypeProperty ;
                rdfs:domain :Permit ;
                rdfs:range xsd:date ;
@@ -260,7 +268,7 @@ xsd:dateTime owl:equivalentClass xsd:date .
                           "Beginning Date" .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#endingDate
+###  https://edint.es/def/censovehiculos#endingDate
 :endingDate rdf:type owl:DatatypeProperty ;
             rdfs:domain :Permit ;
             rdfs:range xsd:date ;
@@ -270,7 +278,7 @@ xsd:dateTime owl:equivalentClass xsd:date .
                        "Fecha de finalización"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#licensePlateNumber
+###  https://edint.es/def/censovehiculos#licensePlateNumber
 :licensePlateNumber rdf:type owl:DatatypeProperty ;
                     rdfs:domain :Vehicle ;
                     rdfs:range xsd:string ;
@@ -284,6 +292,10 @@ xsd:dateTime owl:equivalentClass xsd:date .
 #    Classes
 #################################################################
 
+###  hhttps://edint.es/def/trafico#StreetSection
+<hhttps://edint.es/def/trafico#StreetSection> rdf:type owl:Class .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo> rdf:type owl:Class ;
                                                                 rdfs:comment "Tramo definido por un punto de inicio y fin que puede pertenecer a una o más vías."@es ;
@@ -291,19 +303,17 @@ xsd:dateTime owl:equivalentClass xsd:date .
                                                                 rdfs:label "Tramo"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone
-<http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone> rdf:type owl:Class ;
-                                                                         rdfs:comment "Area a la que se aplica una regulacion o normativa particular."@es ,
-                                                                                      "Area to which a particular regulation or policy applies."@en ;
-                                                                         rdfs:label "Regulated Zone"@en ,
-                                                                                    "Zona regulatoria"@es .
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Owner
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+###  https://edint.es/def/censovehiculos#Owner
 :Owner rdf:type owl:Class ;
-       rdfs:subClassOf <https://schema.org/Organization> ,
-                       <https://schema.org/Person> ,
-                       [ rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Class ;
                          owl:unionOf ( <https://schema.org/Organization>
                                        <https://schema.org/Person>
                                      )
@@ -314,7 +324,7 @@ xsd:dateTime owl:equivalentClass xsd:date .
                   "Titular"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Permit
+###  https://edint.es/def/censovehiculos#Permit
 :Permit rdf:type owl:Class ;
         rdfs:comment "Official permit, usually issued by the city council or the traffic authority, that allows a particular vehicle to access, drive through, or park in an area where entry is restricted or regulated"@en ,
                      "Permiso oficial, emitido normalmente por el ayuntamiento o la autoridad de tráfico, que habilita a un vehículo concreto a acceder, circular o estacionar en un área donde el acceso está restringido o regulado"@es ;
@@ -322,7 +332,7 @@ xsd:dateTime owl:equivalentClass xsd:date .
                    "Permit"@en .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Vehicle
+###  https://edint.es/def/censovehiculos#Vehicle
 :Vehicle rdf:type owl:Class ;
          rdfs:subClassOf <https://saref.etsi.org/saref4auto/Vehicle/Vehicle> ;
          rdfs:comment "Dispositivo de transporte autopropulsado, junto con cualquier accesorio, por ejemplo remolques, que es un usuario legal de la red de transporte (Fuente: ISO/TS 19091:2019(en))"@es ,
@@ -331,12 +341,12 @@ xsd:dateTime owl:equivalentClass xsd:date .
                     "Vehículo"@es .
 
 
-###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
-
-
-###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+###  https://edint.es/def/zone#RegulatedZone
+<https://edint.es/def/zone#RegulatedZone> rdf:type owl:Class ;
+                                          rdfs:comment "Area a la que se aplica una regulacion o normativa particular."@es ,
+                                                       "Area to which a particular regulation or policy applies."@en ;
+                                          rdfs:label "Regulated Zone"@en ,
+                                                     "Zona regulatoria"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/Vehicle/Vehicle
@@ -366,58 +376,34 @@ xsd:dateTime owl:equivalentClass xsd:date .
 #    Individuals
 #################################################################
 
-###  http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleEnvironmentalBadge
-<http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleEnvironmentalBadge> rdf:type owl:NamedIndividual ,
-                                                                                        <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  https://edint.es/kos/VehicleEnvironmentalBadge
+<https://edint.es/kos/VehicleEnvironmentalBadge> rdf:type owl:NamedIndividual ,
+                                                          <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitPeriodicity
-<http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitPeriodicity> rdf:type owl:NamedIndividual ,
-                                                                                       <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  https://edint.es/kos/VehiclePermitPeriodicity
+<https://edint.es/kos/VehiclePermitPeriodicity> rdf:type owl:NamedIndividual ,
+                                                         <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitStatus
-<http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitStatus> rdf:type owl:NamedIndividual ,
-                                                                                  <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  https://edint.es/kos/VehiclePermitStatus
+<https://edint.es/kos/VehiclePermitStatus> rdf:type owl:NamedIndividual ,
+                                                    <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType
-<http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType> rdf:type owl:NamedIndividual ,
-                                                                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  https://edint.es/kos/VehiclePermitType
+<https://edint.es/kos/VehiclePermitType> rdf:type owl:NamedIndividual ,
+                                                  <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePropulsionType
-<http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePropulsionType> rdf:type owl:NamedIndividual ,
-                                                                                    <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  https://edint.es/kos/VehiclePropulsionType
+<https://edint.es/kos/VehiclePropulsionType> rdf:type owl:NamedIndividual ,
+                                                      <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleType
-<http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleType> rdf:type owl:NamedIndividual ,
-                                                                          <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#DistintivosAmbientales
-<http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#DistintivosAmbientales> rdf:type owl:NamedIndividual .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#EstadosDeAutorización
-<http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#EstadosDeAutorización> rdf:type owl:NamedIndividual .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#PeriodicidadAutorización
-<http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#PeriodicidadAutorización> rdf:type owl:NamedIndividual .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#tipologiasPropulsión
-<http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#tipologiasPropulsión> rdf:type owl:NamedIndividual .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#tipologiasVehiculo
-<http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#tipologiasVehiculo> rdf:type owl:NamedIndividual .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#tiposDeAutorización
-<http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#tiposDeAutorización> rdf:type owl:NamedIndividual .
+###  https://edint.es/kos/VehicleType
+<https://edint.es/kos/VehicleType> rdf:type owl:NamedIndividual ,
+                                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
