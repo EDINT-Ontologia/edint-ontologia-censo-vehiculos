@@ -5,10 +5,10 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#> .
-@prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
+@prefix edintveh: <https://edint.es/def/censovehiculos#> .
+@prefix edintkos: <https://edint.es/kos/> .
 
-@prefix edintvehiclepropulsiontype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePropulsionType/> .
+@prefix edintvehiclepropulsiontype: <https://edint.es/kos/VehiclePropulsionType/> .
 
 #################################################################
 #

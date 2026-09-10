@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#"
-     xml:base="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos"
+<rdf:RDF xmlns="https://edint.es/def/censovehiculos#"
+     xml:base="https://edint.es/def/censovehiculos"
      xmlns:mod="https://w3id.org/mod#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,20 +9,25 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos">
-        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos/0.1.0"/>
+    <owl:Ontology rdf:about="https://edint.es/def/censovehiculos">
+        <owl:versionIRI rdf:resource="https://edint.es/def/censovehiculos"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-29</terms:created>
         <terms:creator xml:lang="es">Daniel Doña</terms:creator>
         <terms:creator>Edna Ruckhaus</terms:creator>
         <terms:creator>Lucía Sánchez</terms:creator>
+        <terms:creator>Maria del Socorro Bernardos</terms:creator>
         <terms:creator>Oscar Corcho</terms:creator>
         <terms:description xml:lang="es">El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales del censo o registro de vehículos. Su alcance se limita a los datos que pueden ser utilizados con los propósitos de cobro de impuestos por parte de las entidades locales o de gestión de la movilidad (permisos de aparcamiento, permisos de acceso a zonas específicas, etc.), que son parte de las funciones habituales de las entidades locales. Quedan fuera del alcance de la ontología otros aspectos relacionados con los vehículos, como pueden ser los datos de sus permisos de circulación, inspecciones técnicas, etc., que podrían ser objeto de una extensión de esta ontología o de su evolución en el futuro, si se considera relevante.</terms:description>
         <terms:description xml:lang="en">The purpose of this ontology is to provide a common vocabulary for representing the main entities and data of the vehicle census or registry. Its scope is limited to the data that may be used for purposes such as tax collection by local authorities or mobility management (parking permits, access permits to specific zones, etc.), which are part of the usual functions of local entities. Other aspects related to vehicles, such as data concerning driving permits, technical inspections, and similar information, are outside the scope of this ontology. These could be addressed through an extension of this ontology or through its future evolution, if considered relevant.</terms:description>
-        <terms:hasFormat>http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos.owl</terms:hasFormat>
+        <terms:hasFormat>https://edint.es/def/censovehiculos.owl</terms:hasFormat>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-29</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="es">Ontología del Censo de Vehículos</terms:title>
+        <terms:title xml:lang="en">Vehicle Census Ontology</terms:title>
         <vann:preferredNamespacePrefix>edintveh</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#"/>
-        <owl:versionInfo>0.1.0</owl:versionInfo>
+        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/censovehiculos#"/>
+        <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-censo-vehiculos/releases/tag/v0.2.1-test"/>
+        <owl:versionInfo>0.2.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -71,6 +76,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
 
@@ -142,6 +154,15 @@
     
 
 
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </rdf:Description>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -154,49 +175,33 @@
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#via -->
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#via">
-        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#authorisesInSegment -->
+    <!-- https://edint.es/def/censovehiculos#authorisesInSegment -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#authorisesInSegment">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Permit"/>
-        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#authorisesInSegment">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
+        <rdfs:range rdf:resource="hhttps://edint.es/def/trafico#StreetSection"/>
         <rdfs:comment xml:lang="es">Identifica el segmento de vía para el cual la autorización da permiso para pasar o aparcar</rdfs:comment>
         <rdfs:comment xml:lang="en">It identifies a segment where the permit authorises the vehicle to go through or park</rdfs:comment>
-        <rdfs:comment xml:lang="en">authorises in segment</rdfs:comment>
+        <rdfs:label xml:lang="en">authorises in segment</rdfs:label>
         <rdfs:label xml:lang="es">autoriza en tramo</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#authorisesInZone -->
+    <!-- https://edint.es/def/censovehiculos#authorisesVehicle -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#authorisesInZone">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Permit"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/commons/zone#TrafficControlledZone"/>
-        <rdfs:comment xml:lang="es">Identifica una zona de tráfico regulado para la cual la autorización da permiso para pasar o aparcar</rdfs:comment>
-        <rdfs:comment xml:lang="en">It identifies a traffic-controlled zone where the permit authorises the vehicle to go through or park</rdfs:comment>
-        <rdfs:comment xml:lang="en">authorises in zone</rdfs:comment>
-        <rdfs:label xml:lang="es">autoriza en zona</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#authorisesVehicle -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#authorisesVehicle">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Permit"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Vehicle"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#authorisesVehicle">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
+        <rdfs:range rdf:resource="https://edint.es/def/censovehiculos#Vehicle"/>
         <rdfs:comment xml:lang="es">Identifica el vehículo al que se refiere la autorización</rdfs:comment>
         <rdfs:comment xml:lang="en">It identifies the vehicle for which the permit is issued</rdfs:comment>
         <rdfs:label xml:lang="en">authorises vehicle</rdfs:label>
@@ -205,18 +210,18 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#environmentalBadge -->
+    <!-- https://edint.es/def/censovehiculos#environmentalBadge -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#environmentalBadge">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Vehicle"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#environmentalBadge">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Vehicle"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleEnvironmentalBadge"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/VehicleEnvironmentalBadge"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -229,32 +234,32 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitOwner -->
+    <!-- https://edint.es/def/censovehiculos#permitOwner -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitOwner">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Permit"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Owner"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#permitOwner">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
+        <rdfs:range rdf:resource="https://edint.es/def/censovehiculos#Owner"/>
         <rdfs:comment xml:lang="es">Identifica al titular (persona u organización) para el cual la autorización está expedida</rdfs:comment>
         <rdfs:comment xml:lang="en">It identifies the person or organisation for which the permit has been issued</rdfs:comment>
-        <rdfs:comment xml:lang="en">permit owner</rdfs:comment>
+        <rdfs:label xml:lang="en">permit owner</rdfs:label>
         <rdfs:label xml:lang="es">titular autorización</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitPeriodicity -->
+    <!-- https://edint.es/def/censovehiculos#permitPeriodicity -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitPeriodicity">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Permit"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#permitPeriodicity">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitPeriodicity"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/VehiclePermitPeriodicity"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -267,18 +272,18 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitStatus -->
+    <!-- https://edint.es/def/censovehiculos#permitStatus -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitStatus">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Permit"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#permitStatus">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitStatus"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/VehiclePermitStatus"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -291,18 +296,18 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitType -->
+    <!-- https://edint.es/def/censovehiculos#permitType -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitType">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Permit"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#permitType">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/VehiclePermitType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -315,18 +320,18 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#propulsionType -->
+    <!-- https://edint.es/def/censovehiculos#propulsionType -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#propulsionType">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Vehicle"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#propulsionType">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Vehicle"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePropulsionType"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/VehiclePropulsionType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -339,32 +344,32 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#registeredOwner -->
+    <!-- https://edint.es/def/censovehiculos#registeredOwner -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#registeredOwner">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Vehicle"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Owner"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#registeredOwner">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Vehicle"/>
+        <rdfs:range rdf:resource="https://edint.es/def/censovehiculos#Owner"/>
         <rdfs:comment xml:lang="es">Identifica al titular (persona u organización) del vehículo</rdfs:comment>
         <rdfs:comment xml:lang="en">It identifies the person or organisation who owns the vehicle</rdfs:comment>
-        <rdfs:comment xml:lang="en">registered owner</rdfs:comment>
+        <rdfs:label xml:lang="en">registered owner</rdfs:label>
         <rdfs:label xml:lang="es">titular registrado</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#vehicleType -->
+    <!-- https://edint.es/def/censovehiculos#vehicleType -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#vehicleType">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Vehicle"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#vehicleType">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Vehicle"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleType"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/VehicleType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -377,10 +382,71 @@
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- https://edint.es/def/censovehiculos#activationDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/censovehiculos#activationDate">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="es">La fecha de activación de la autorización.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date on which the authorization is activated.</rdfs:comment>
+        <rdfs:label xml:lang="en">Date of Activation</rdfs:label>
+        <rdfs:label xml:lang="es">Fecha de activación</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://edint.es/def/censovehiculos#beginningDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/censovehiculos#beginningDate">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="es">Fecha de inicio del periodo de la autorización.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Starting date of the authorization period.</rdfs:comment>
+        <rdfs:label xml:lang="es">Fecha de inicio</rdfs:label>
+        <rdfs:label>Beginning Date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://edint.es/def/censovehiculos#endingDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/censovehiculos#endingDate">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="es">Fecha de finalización de vigencia de la autorización</rdfs:comment>
+        <rdfs:comment xml:lang="en">Permit expiration date</rdfs:comment>
+        <rdfs:label xml:lang="en">Ending date</rdfs:label>
+        <rdfs:label xml:lang="es">Fecha de finalización</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://edint.es/def/censovehiculos#licensePlateNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/censovehiculos#licensePlateNumber">
+        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Alphanumeric identifier assigned to a vehicle for registration and identification purposes.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Identificador alfanumérico asignado a un vehículo para su registro e identificación</rdfs:comment>
+        <rdfs:label xml:lang="en">License Plate Number</rdfs:label>
+        <rdfs:label xml:lang="es">Número de matrícula</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -396,63 +462,20 @@
     
 
 
+    <!-- hhttps://edint.es/def/trafico#StreetSection -->
+
+
+    <owl:Class rdf:about="hhttps://edint.es/def/trafico#StreetSection"/>
+    
+
+
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo -->
 
 
-    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/commons/zone#TrafficControlledZone -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/commons/zone#TrafficControlledZone"/>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Owner -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Owner">
-        <rdfs:subClassOf rdf:resource="https://schema.org/Organization"/>
-        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://schema.org/Organization"/>
-                    <rdf:Description rdf:about="https://schema.org/Person"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Owner</rdfs:comment>
-        <rdfs:comment xml:lang="en">Person or organisation that is registered as the owner of a vehicle or of a vehicle permit</rdfs:comment>
-        <rdfs:comment xml:lang="es">Persona u organización que está registrada como titular de un vehículo o como titular de una autorización para un vehículo</rdfs:comment>
-        <rdfs:label xml:lang="es">Titular</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Permit -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Permit">
-        <rdfs:comment xml:lang="en">Official permit, usually issued by the city council or the traffic authority, that allows a particular vehicle to access, drive through, or park in an area where entry is restricted or regulated</rdfs:comment>
-        <rdfs:comment xml:lang="es">Permiso oficial, emitido normalmente por el ayuntamiento o la autoridad de tráfico, que habilita a un vehículo concreto a acceder, circular o estacionar en un área donde el acceso está restringido o regulado</rdfs:comment>
-        <rdfs:comment xml:lang="en">Permit</rdfs:comment>
-        <rdfs:label xml:lang="es">Autorización</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Vehicle -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#Vehicle">
-        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4auto/Vehicle/Vehicle"/>
-        <rdfs:comment xml:lang="es">Dispositivo de transporte autopropulsado, junto con cualquier accesorio, por ejemplo remolques, que es un usuario legal de la red de transporte (Fuente: ISO/TS 19091:2019(en))</rdfs:comment>
-        <rdfs:comment xml:lang="en">Self-propelled transport device, along with any attachments, e.g. trailers, that is a legal user of the transportation network (Source: ISO/TS 19091:2019(en)).</rdfs:comment>
-        <rdfs:label xml:lang="en">Vehicle</rdfs:label>
-        <rdfs:label xml:lang="es">Vehículo</rdfs:label>
+    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">
+        <rdfs:comment xml:lang="es">Tramo definido por un punto de inicio y fin que puede pertenecer a una o más vías.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
+        <rdfs:label xml:lang="es">Tramo</rdfs:label>
     </owl:Class>
     
 
@@ -471,24 +494,95 @@
     
 
 
+    <!-- https://edint.es/def/censovehiculos#Owner -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/censovehiculos#Owner">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Person or organisation that is registered as the owner of a vehicle or of a vehicle permit</rdfs:comment>
+        <rdfs:comment xml:lang="es">Persona u organización que está registrada como titular de un vehículo o como titular de una autorización para un vehículo</rdfs:comment>
+        <rdfs:label xml:lang="en">Owner</rdfs:label>
+        <rdfs:label xml:lang="es">Titular</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://edint.es/def/censovehiculos#Permit -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/censovehiculos#Permit">
+        <rdfs:comment xml:lang="en">Official permit, usually issued by the city council or the traffic authority, that allows a particular vehicle to access, drive through, or park in an area where entry is restricted or regulated</rdfs:comment>
+        <rdfs:comment xml:lang="es">Permiso oficial, emitido normalmente por el ayuntamiento o la autoridad de tráfico, que habilita a un vehículo concreto a acceder, circular o estacionar en un área donde el acceso está restringido o regulado</rdfs:comment>
+        <rdfs:label xml:lang="es">Autorización</rdfs:label>
+        <rdfs:label xml:lang="en">Permit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://edint.es/def/censovehiculos#Vehicle -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/censovehiculos#Vehicle">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4auto/Vehicle/Vehicle"/>
+        <rdfs:comment xml:lang="es">Dispositivo de transporte autopropulsado, junto con cualquier accesorio, por ejemplo remolques, que es un usuario legal de la red de transporte (Fuente: ISO/TS 19091:2019(en))</rdfs:comment>
+        <rdfs:comment xml:lang="en">Self-propelled transport device, along with any attachments, e.g. trailers, that is a legal user of the transportation network (Source: ISO/TS 19091:2019(en)).</rdfs:comment>
+        <rdfs:label xml:lang="en">Vehicle</rdfs:label>
+        <rdfs:label xml:lang="es">Vehículo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://edint.es/def/zone#RegulatedZone -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/zone#RegulatedZone">
+        <rdfs:comment xml:lang="es">Area a la que se aplica una regulacion o normativa particular.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Area to which a particular regulation or policy applies.</rdfs:comment>
+        <rdfs:label xml:lang="en">Regulated Zone</rdfs:label>
+        <rdfs:label xml:lang="es">Zona regulatoria</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://saref.etsi.org/saref4auto/Vehicle/Vehicle -->
 
 
-    <owl:Class rdf:about="https://saref.etsi.org/saref4auto/Vehicle/Vehicle"/>
+    <owl:Class rdf:about="https://saref.etsi.org/saref4auto/Vehicle/Vehicle">
+        <rdfs:comment>Self-propelled transport device, along with any attachments, e.g. trailers, that is a legal user of the transportation network (Source: ISO/TS 19091:2019(en)).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4auto/"/>
+        <rdfs:label xml:lang="en">Vehicle</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- https://schema.org/Organization -->
 
 
-    <owl:Class rdf:about="https://schema.org/Organization"/>
+    <owl:Class rdf:about="https://schema.org/Organization">
+        <rdfs:comment xml:lang="en">An organization such as a school, NGO, corporation, club, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una organización como una escuela, una ONG, una corporación, un club, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/"/>
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- https://schema.org/Person -->
 
 
-    <owl:Class rdf:about="https://schema.org/Person"/>
+    <owl:Class rdf:about="https://schema.org/Person">
+        <rdfs:comment xml:lang="en">A person (alive, dead, undead, or fictional).</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una persona (viva, muerta, no muerta o ficticia).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/"/>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
     
 
 
@@ -504,99 +598,57 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleEnvironmentalBadge -->
+    <!-- https://edint.es/kos/VehicleEnvironmentalBadge -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleEnvironmentalBadge">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/VehicleEnvironmentalBadge">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitPeriodicity -->
+    <!-- https://edint.es/kos/VehiclePermitPeriodicity -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitPeriodicity">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/VehiclePermitPeriodicity">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitStatus -->
+    <!-- https://edint.es/kos/VehiclePermitStatus -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitStatus">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/VehiclePermitStatus">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType -->
+    <!-- https://edint.es/kos/VehiclePermitType -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/VehiclePermitType">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePropulsionType -->
+    <!-- https://edint.es/kos/VehiclePropulsionType -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePropulsionType">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/VehiclePropulsionType">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleType -->
+    <!-- https://edint.es/kos/VehicleType -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleType">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/VehicleType">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#DistintivosAmbientales -->
-
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#DistintivosAmbientales"/>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#EstadosDeAutorización -->
-
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#EstadosDeAutorización"/>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#PeriodicidadAutorización -->
-
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#PeriodicidadAutorización"/>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#tipologiasPropulsión -->
-
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#tipologiasPropulsión"/>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#tipologiasVehiculo -->
-
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#tipologiasVehiculo"/>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#tiposDeAutorización -->
-
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/femp-base/registro-vehiculo#tiposDeAutorización"/>
 </rdf:RDF>
 
 
