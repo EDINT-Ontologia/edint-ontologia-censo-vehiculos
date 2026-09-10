@@ -31,14 +31,14 @@
         <dcterms:description xml:lang="es">El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales del censo o registro de vehículos. Su alcance se limita a los datos que pueden ser utilizados con los propósitos de cobro de impuestos por parte de las entidades locales o de gestión de la movilidad (permisos de aparcamiento, permisos de acceso a zonas específicas, etc.), que son parte de las funciones habituales de las entidades locales. Quedan fuera del alcance de la ontología otros aspectos relacionados con los vehículos, como pueden ser los datos de sus permisos de circulación, inspecciones técnicas, etc., que podrían ser objeto de una extensión de esta ontología o de su evolución en el futuro, si se considera relevante.</dcterms:description>
         <dcterms:description xml:lang="en">The purpose of this ontology is to provide a common vocabulary for representing the main entities and data of the vehicle census or registry. Its scope is limited to the data that may be used for purposes such as tax collection by local authorities or mobility management (parking permits, access permits to specific zones, etc.), which are part of the usual functions of local entities. Other aspects related to vehicles, such as data concerning driving permits, technical inspections, and similar information, are outside the scope of this ontology. These could be addressed through an extension of this ontology or through its future evolution, if considered relevant.</dcterms:description>
         <dcterms:hasFormat>https://edint.es/def/censovehiculos.owl</dcterms:hasFormat>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-29</dcterms:issued>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-10</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="es">Ontología del Censo de Vehículos</dcterms:title>
         <dcterms:title xml:lang="en">Vehicle Census Ontology</dcterms:title>
         <vann:preferredNamespacePrefix>edintveh</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/censovehiculos#"/>
-        <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-censo-vehiculos/releases/tag/v0.2.1-test"/>
-        <owl:versionInfo>0.2.2</owl:versionInfo>
+        <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-censo-vehiculos/releases/tag/v0.2.0"/>
+        <owl:versionInfo>0.2.1</owl:versionInfo>
     </owl:Ontology>
     
 
