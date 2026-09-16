@@ -19,7 +19,7 @@
      xmlns:edintkos="https://edint.es/kos/"
      xmlns:edintveh="https://edint.es/def/censo-vehiculos#"
      xmlns:edinttraf="hhttps://edint.es/def/trafico#"
-     xmlns:edintzone="https://edint.es/def/zone#">
+     xmlns:edintzone="https://edint.es/def/zona-regulatoria#">
     <owl:Ontology rdf:about="https://edint.es/def/censo-vehiculos">
         <owl:versionIRI rdf:resource="https://edint.es/def/censo-vehiculos"/>
         <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-29</dcterms:created>
@@ -508,9 +508,9 @@
     
 
 
-    <!-- https://edint.es/def/zone#RegulatedZone -->
+    <!-- https://edint.es/def/zona-regulatoria#RegulatedZone -->
 
-    <owl:Class rdf:about="https://edint.es/def/zone#RegulatedZone">
+    <owl:Class rdf:about="https://edint.es/def/zona-regulatoria#RegulatedZone">
         <rdfs:comment xml:lang="es">Area a la que se aplica una regulacion o normativa particular.</rdfs:comment>
         <rdfs:comment xml:lang="en">Area to which a particular regulation or policy applies.</rdfs:comment>
         <rdfs:label xml:lang="en">Regulated Zone</rdfs:label>
