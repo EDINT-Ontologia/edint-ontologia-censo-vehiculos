@@ -498,3 +498,4 @@
   a edintzone:TrafficControlledZone .
 
 <http://vocab.linkeddata.es/datosabiertos/recurso/trafico/zona-regulada/ZR-CI-1174>
+  a edintzone:TrafficControlledZone .
