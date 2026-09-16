@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://edint.es/def/censovehiculos#"
-     xml:base="https://edint.es/def/censovehiculos"
+<rdf:RDF xmlns="https://edint.es/def/censo-vehiculos#"
+     xml:base="https://edint.es/def/censo-vehiculos"
      xmlns:gsp="http://www.opengis.net/spec/geosparql/1.0/"
      xmlns:mod="https://w3id.org/mod#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -17,11 +17,11 @@
      xmlns:schema="https://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:edintkos="https://edint.es/kos/"
-     xmlns:edintveh="https://edint.es/def/censovehiculos#"
+     xmlns:edintveh="https://edint.es/def/censo-vehiculos#"
      xmlns:edinttraf="hhttps://edint.es/def/trafico#"
      xmlns:edintzone="https://edint.es/def/zone#">
-    <owl:Ontology rdf:about="https://edint.es/def/censovehiculos">
-        <owl:versionIRI rdf:resource="https://edint.es/def/censovehiculos"/>
+    <owl:Ontology rdf:about="https://edint.es/def/censo-vehiculos">
+        <owl:versionIRI rdf:resource="https://edint.es/def/censo-vehiculos"/>
         <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-29</dcterms:created>
         <dcterms:creator xml:lang="es">Daniel Doña</dcterms:creator>
         <dcterms:creator>Edna Ruckhaus</dcterms:creator>
@@ -30,13 +30,13 @@
         <dcterms:creator>Oscar Corcho</dcterms:creator>
         <dcterms:description xml:lang="es">El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales del censo o registro de vehículos. Su alcance se limita a los datos que pueden ser utilizados con los propósitos de cobro de impuestos por parte de las entidades locales o de gestión de la movilidad (permisos de aparcamiento, permisos de acceso a zonas específicas, etc.), que son parte de las funciones habituales de las entidades locales. Quedan fuera del alcance de la ontología otros aspectos relacionados con los vehículos, como pueden ser los datos de sus permisos de circulación, inspecciones técnicas, etc., que podrían ser objeto de una extensión de esta ontología o de su evolución en el futuro, si se considera relevante.</dcterms:description>
         <dcterms:description xml:lang="en">The purpose of this ontology is to provide a common vocabulary for representing the main entities and data of the vehicle census or registry. Its scope is limited to the data that may be used for purposes such as tax collection by local authorities or mobility management (parking permits, access permits to specific zones, etc.), which are part of the usual functions of local entities. Other aspects related to vehicles, such as data concerning driving permits, technical inspections, and similar information, are outside the scope of this ontology. These could be addressed through an extension of this ontology or through its future evolution, if considered relevant.</dcterms:description>
-        <dcterms:hasFormat>https://edint.es/def/censovehiculos.owl</dcterms:hasFormat>
+        <dcterms:hasFormat>https://edint.es/def/censo-vehiculos.owl</dcterms:hasFormat>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-10</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="es">Ontología del Censo de Vehículos</dcterms:title>
         <dcterms:title xml:lang="en">Vehicle Census Ontology</dcterms:title>
         <vann:preferredNamespacePrefix>edintveh</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/censovehiculos#"/>
+        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/censo-vehiculos#"/>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-censo-vehiculos/releases/tag/v0.2.0"/>
         <owl:versionInfo>0.2.1</owl:versionInfo>
     </owl:Ontology>
@@ -174,10 +174,10 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#authorisesInSegment -->
+    <!-- https://edint.es/def/censo-vehiculos#authorisesInSegment -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#authorisesInSegment">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#authorisesInSegment">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Permit"/>
         <rdfs:range rdf:resource="hhttps://edint.es/def/trafico#StreetSection"/>
         <rdfs:comment xml:lang="es">Identifica el segmento de vía para el cual la autorización da permiso para pasar o aparcar</rdfs:comment>
         <rdfs:comment xml:lang="en">It identifies a segment where the permit authorises the vehicle to go through or park</rdfs:comment>
@@ -187,11 +187,11 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#authorisesVehicle -->
+    <!-- https://edint.es/def/censo-vehiculos#authorisesVehicle -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#authorisesVehicle">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
-        <rdfs:range rdf:resource="https://edint.es/def/censovehiculos#Vehicle"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#authorisesVehicle">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Permit"/>
+        <rdfs:range rdf:resource="https://edint.es/def/censo-vehiculos#Vehicle"/>
         <rdfs:comment xml:lang="es">Identifica el vehículo al que se refiere la autorización</rdfs:comment>
         <rdfs:comment xml:lang="en">It identifies the vehicle for which the permit is issued</rdfs:comment>
         <rdfs:label xml:lang="en">authorises vehicle</rdfs:label>
@@ -200,10 +200,10 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#environmentalBadge -->
+    <!-- https://edint.es/def/censo-vehiculos#environmentalBadge -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#environmentalBadge">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Vehicle"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#environmentalBadge">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Vehicle"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -223,11 +223,11 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#permitOwner -->
+    <!-- https://edint.es/def/censo-vehiculos#permitOwner -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#permitOwner">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
-        <rdfs:range rdf:resource="https://edint.es/def/censovehiculos#Owner"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#permitOwner">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Permit"/>
+        <rdfs:range rdf:resource="https://edint.es/def/censo-vehiculos#Owner"/>
         <rdfs:comment xml:lang="es">Identifica al titular (persona u organización) para el cual la autorización está expedida</rdfs:comment>
         <rdfs:comment xml:lang="en">It identifies the person or organisation for which the permit has been issued</rdfs:comment>
         <rdfs:label xml:lang="en">permit owner</rdfs:label>
@@ -236,10 +236,10 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#permitPeriodicity -->
+    <!-- https://edint.es/def/censo-vehiculos#permitPeriodicity -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#permitPeriodicity">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#permitPeriodicity">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Permit"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -259,10 +259,10 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#permitStatus -->
+    <!-- https://edint.es/def/censo-vehiculos#permitStatus -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#permitStatus">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#permitStatus">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Permit"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -282,10 +282,10 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#permitType -->
+    <!-- https://edint.es/def/censo-vehiculos#permitType -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#permitType">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#permitType">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Permit"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -305,10 +305,10 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#propulsionType -->
+    <!-- https://edint.es/def/censo-vehiculos#propulsionType -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#propulsionType">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Vehicle"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#propulsionType">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Vehicle"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -328,11 +328,11 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#registeredOwner -->
+    <!-- https://edint.es/def/censo-vehiculos#registeredOwner -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#registeredOwner">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Vehicle"/>
-        <rdfs:range rdf:resource="https://edint.es/def/censovehiculos#Owner"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#registeredOwner">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Vehicle"/>
+        <rdfs:range rdf:resource="https://edint.es/def/censo-vehiculos#Owner"/>
         <rdfs:comment xml:lang="es">Identifica al titular (persona u organización) del vehículo</rdfs:comment>
         <rdfs:comment xml:lang="en">It identifies the person or organisation who owns the vehicle</rdfs:comment>
         <rdfs:label xml:lang="en">registered owner</rdfs:label>
@@ -341,10 +341,10 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#vehicleType -->
+    <!-- https://edint.es/def/censo-vehiculos#vehicleType -->
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#vehicleType">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Vehicle"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#vehicleType">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Vehicle"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -375,10 +375,10 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#activationDate -->
+    <!-- https://edint.es/def/censo-vehiculos#activationDate -->
 
-    <owl:DatatypeProperty rdf:about="https://edint.es/def/censovehiculos#activationDate">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/censo-vehiculos#activationDate">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Permit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="es">La fecha de activación de la autorización.</rdfs:comment>
         <rdfs:comment xml:lang="en">The date on which the authorization is activated.</rdfs:comment>
@@ -388,10 +388,10 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#beginningDate -->
+    <!-- https://edint.es/def/censo-vehiculos#beginningDate -->
 
-    <owl:DatatypeProperty rdf:about="https://edint.es/def/censovehiculos#beginningDate">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/censo-vehiculos#beginningDate">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Permit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="es">Fecha de inicio del periodo de la autorización.</rdfs:comment>
         <rdfs:comment xml:lang="en">Starting date of the authorization period.</rdfs:comment>
@@ -401,10 +401,10 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#endingDate -->
+    <!-- https://edint.es/def/censo-vehiculos#endingDate -->
 
-    <owl:DatatypeProperty rdf:about="https://edint.es/def/censovehiculos#endingDate">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Permit"/>
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/censo-vehiculos#endingDate">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Permit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="es">Fecha de finalización de vigencia de la autorización</rdfs:comment>
         <rdfs:comment xml:lang="en">Permit expiration date</rdfs:comment>
@@ -414,10 +414,10 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#licensePlateNumber -->
+    <!-- https://edint.es/def/censo-vehiculos#licensePlateNumber -->
 
-    <owl:DatatypeProperty rdf:about="https://edint.es/def/censovehiculos#licensePlateNumber">
-        <rdfs:domain rdf:resource="https://edint.es/def/censovehiculos#Vehicle"/>
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/censo-vehiculos#licensePlateNumber">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Alphanumeric identifier assigned to a vehicle for registration and identification purposes.</rdfs:comment>
         <rdfs:comment xml:lang="es">Identificador alfanumérico asignado a un vehículo para su registro e identificación</rdfs:comment>
@@ -466,9 +466,9 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#Owner -->
+    <!-- https://edint.es/def/censo-vehiculos#Owner -->
 
-    <owl:Class rdf:about="https://edint.es/def/censovehiculos#Owner">
+    <owl:Class rdf:about="https://edint.es/def/censo-vehiculos#Owner">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -485,9 +485,9 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#Permit -->
+    <!-- https://edint.es/def/censo-vehiculos#Permit -->
 
-    <owl:Class rdf:about="https://edint.es/def/censovehiculos#Permit">
+    <owl:Class rdf:about="https://edint.es/def/censo-vehiculos#Permit">
         <rdfs:comment xml:lang="en">Official permit, usually issued by the city council or the traffic authority, that allows a particular vehicle to access, drive through, or park in an area where entry is restricted or regulated</rdfs:comment>
         <rdfs:comment xml:lang="es">Permiso oficial, emitido normalmente por el ayuntamiento o la autoridad de tráfico, que habilita a un vehículo concreto a acceder, circular o estacionar en un área donde el acceso está restringido o regulado</rdfs:comment>
         <rdfs:label xml:lang="es">Autorización</rdfs:label>
@@ -496,9 +496,9 @@
     
 
 
-    <!-- https://edint.es/def/censovehiculos#Vehicle -->
+    <!-- https://edint.es/def/censo-vehiculos#Vehicle -->
 
-    <owl:Class rdf:about="https://edint.es/def/censovehiculos#Vehicle">
+    <owl:Class rdf:about="https://edint.es/def/censo-vehiculos#Vehicle">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4auto/Vehicle/Vehicle"/>
         <rdfs:comment xml:lang="es">Dispositivo de transporte autopropulsado, junto con cualquier accesorio, por ejemplo remolques, que es un usuario legal de la red de transporte (Fuente: ISO/TS 19091:2019(en))</rdfs:comment>
         <rdfs:comment xml:lang="en">Self-propelled transport device, along with any attachments, e.g. trailers, that is a legal user of the transportation network (Source: ISO/TS 19091:2019(en)).</rdfs:comment>
