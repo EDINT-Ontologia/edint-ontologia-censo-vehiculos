@@ -1,7 +1,7 @@
 
 # VEH17: ¿Qué vehículos con un determinado distintivo ambiental estan autorizados en una zona regulada?
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 
 SELECT DISTINCT ?vehicle ?zone
 WHERE {
@@ -16,7 +16,7 @@ ORDER BY ?zone ?vehicle
 
 # Devolviendo etiqueta legible del distintivo:
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
 
 SELECT DISTINCT ?vehicle ?zone ?badge ?badgeLabel
@@ -35,7 +35,7 @@ ORDER BY LCASE(STR(COALESCE(?badgeLabel, STR(?badge)))) ?zone ?vehicle
 
 # Para filtrar por nombre del distintivo (p. ej., “ECO”):
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/>
 PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
 
@@ -58,7 +58,7 @@ ORDER BY ?zone ?vehicle
 
 # Para zona concreta + Distintivo concreto (por URI):
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 
 SELECT DISTINCT ?vehicle
 WHERE {

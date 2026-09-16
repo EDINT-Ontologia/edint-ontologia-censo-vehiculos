@@ -1,7 +1,7 @@
 
 # VEH14: ¿Qué vehículos están autorizados por un tipo de autorización determinada?
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 
 SELECT DISTINCT ?vehicle
 WHERE {
@@ -13,7 +13,7 @@ ORDER BY ?vehicle
 
 # Para un tipo de autorización referido por su etiqueta (por ejemplo, “Residente”):
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/>
 PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
 
@@ -35,7 +35,7 @@ ORDER BY ?vehicle
 
 # Para un tipo de autorización referido por su etiqueta (por ejemplo, “Residente”) sin depender de labels:
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX edintvehiclepermittype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 

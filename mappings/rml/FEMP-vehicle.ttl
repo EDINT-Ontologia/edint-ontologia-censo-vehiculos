@@ -1,7 +1,7 @@
 @prefix edintvehicletype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleType/>.
 @prefix edintvehiclepropulsiontype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePropulsionType/>.
 @prefix edintvehicleenvironmentalbadge: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleEnvironmentalBadge/>.
-@prefix edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>.
+@prefix edintveh: <https://edint.es/def/censo-vehiculos#>.
 @prefix rr: <http://www.w3.org/ns/r2rml#>.
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.

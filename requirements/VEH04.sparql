@@ -3,8 +3,8 @@
 # VEH4: ¿En que tramo es válida una autorización?
 
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
-PREFIX trafico: <http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX trafico: <https://edint.es/def/trafico#>
 
 SELECT ?permit ?segment
 WHERE {
@@ -14,7 +14,7 @@ WHERE {
 
 # Con autorización concreta:
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 
 SELECT ?segment
 WHERE {

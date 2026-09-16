@@ -2,7 +2,7 @@ prefixes:
   edintvehiclepermittype: http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType/
   edintvehiclepermitstatus: http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitStatus/
   edintvehiclepermitperiodicity: http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitPeriodicity/
-  edintveh: http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#
+  edintveh: https://edint.es/def/censo-vehiculos#
 
 sources:
   permit-source: ['dataset_enriquecido.csv~csv']

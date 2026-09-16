@@ -1,7 +1,7 @@
 
 # VEH23: ¿Quien es el titular de un vehículo y los de sus autorizaciones?
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehicles#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 
 SELECT DISTINCT ?vehicle ?vehicleOwner ?permit ?permitOwner
 WHERE {
@@ -22,7 +22,7 @@ PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:   <https://schema.org/>
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehicles#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 
 SELECT ?vehicle
        ?owner
@@ -71,7 +71,7 @@ ORDER BY ?vehicle ?permit
 PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema:   <https://schema.org/>
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehicles#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 
 SELECT ?vehicle
        (SAMPLE(?ownerReg) AS ?owner)

@@ -1,7 +1,7 @@
 
 # VEH16: ¿Cuál es la periodicidad/duración de una autorización?
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT ?periodicity ?label
@@ -13,7 +13,7 @@ WHERE {
 
 # Para periodicidad de todas las autorizaciones:
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT ?permit ?periodicity ?label
@@ -28,7 +28,7 @@ ORDER BY ?permit
 
 # Para periodicidad concreta (p. ej. “Mensual”)
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 

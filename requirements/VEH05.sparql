@@ -2,8 +2,8 @@
 # VEH5: ¿En que zona permite operar una autorización?
 
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
-PREFIX zone: <http://vocab.linkeddata.es/datosabiertos/def/commons/zone#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX zone: <https://edint.es/def/zona-regulatoria#>
 
 SELECT ?permit ?zone
 WHERE {
@@ -14,8 +14,8 @@ WHERE {
 
 # Con autorización concreta:
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
-PREFIX zone: <http://vocab.linkeddata.es/datosabiertos/def/commons/zone#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX zone: <https://edint.es/def/zona-regulatoria#>
 
 SELECT ?zone
 WHERE {
