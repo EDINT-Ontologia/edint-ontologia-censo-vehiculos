@@ -1,5 +1,5 @@
-@prefix edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#> .
-@prefix edintzone: <http://vocab.linkeddata.es/datosabiertos/def/commons/zone#> .
+@prefix edintveh: <https://edint.es/def/censo-vehiculos#> .
+@prefix edintzone: <https://edint.es/def/zona-regulatoria#> .
 @prefix edinttraf: <http://vocab.ciudadesabiertas.es/def/transporte/trafico#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix s4auto: <https://saref.etsi.org/saref4auto/Vehicle/> .

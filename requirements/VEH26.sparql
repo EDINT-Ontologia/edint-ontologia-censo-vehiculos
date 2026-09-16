@@ -1,8 +1,8 @@
 
 # VEH26: ¿Qué vehículos tienen una autorización para zonas de aparcamiento regulado? - Esto depende de la ontología de zonas
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
-PREFIX edintzone: <http://vocab.linkeddata.es/datosabiertos/def/commons/zone#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX edintzone: <https://edint.es/def/zona-regulatoria#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT DISTINCT ?vehicle ?permit ?zone
@@ -18,8 +18,8 @@ ORDER BY ?vehicle ?permit
 
 # Para autorizaciones activas solo
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
-PREFIX edintzone: <http://vocab.linkeddata.es/datosabiertos/def/commons/zone#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX edintzone: <https://edint.es/def/zona-regulatoria#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 

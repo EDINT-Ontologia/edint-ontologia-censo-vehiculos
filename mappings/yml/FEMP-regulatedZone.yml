@@ -1,5 +1,5 @@
 prefixes:
-  edintzone: http://vocab.linkeddata.es/datosabiertos/def/commons/zone#
+  edintzone: https://edint.es/def/zona-regulatoria#
 
 sources:
   t-controlled-zone-source: ['dataset_enriquecido.csv~csv']

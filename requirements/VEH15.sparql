@@ -1,7 +1,7 @@
 
 #VEH15: ¿Cuál es el estado de una autorización?
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT ?status ?statusLabel
@@ -14,7 +14,7 @@ WHERE {
 
 # Para estado de todas las autorizaciones:
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT ?permit ?status ?statusLabel
@@ -29,7 +29,7 @@ ORDER BY ?permit
 
 # Para buscar permisos solo por etiqueta de su estado (p. ej. “Activo”):
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 

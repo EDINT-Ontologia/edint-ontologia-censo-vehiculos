@@ -2,7 +2,7 @@
 # VEH18: ¿Qué tipos de vehículo con un determinado distintivo ambiental están autorizados en una zona regulada?
 
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
 
 SELECT DISTINCT ?vehicleType ?vehicleTypeLabel
@@ -21,7 +21,7 @@ ORDER BY LCASE(STR(COALESCE(?vehicleTypeLabel, STR(?vehicleType))))
 
 # Por etiqueta del distintivo (sin conocer su URI) + todas las zonas:
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/>
 PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
 
@@ -47,7 +47,7 @@ ORDER BY LCASE(STR(COALESCE(?vehicleTypeLabel, STR(?vehicleType))))
 
 # Para una zona regulada específica (por URI)
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
 
 SELECT DISTINCT ?vehicleType ?vehicleTypeLabel
@@ -66,7 +66,7 @@ ORDER BY LCASE(STR(COALESCE(?vehicleTypeLabel, STR(?vehicleType))))
 
 # Versión agrupada: tipos de vehículo y recuento por distintivo y zona:
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
 
 SELECT ?zone ?vehicleType ?vehicleTypeLabel (COUNT(DISTINCT ?vehicle) AS ?numVehicles)
@@ -86,7 +86,7 @@ ORDER BY ?zone LCASE(STR(COALESCE(?vehicleTypeLabel, STR(?vehicleType))))
 
 # Para mostrar etiqueta del distintivo y etiqueta de la zona:
 
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
 

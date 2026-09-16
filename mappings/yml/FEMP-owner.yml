@@ -1,5 +1,5 @@
 prefixes:
-  edintveh: http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#
+  edintveh: https://edint.es/def/censo-vehiculos#
   schema: https://schema.org/
 
 sources:

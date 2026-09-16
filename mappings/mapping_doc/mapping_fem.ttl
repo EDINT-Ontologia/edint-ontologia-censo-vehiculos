@@ -1,9 +1,9 @@
-@prefix edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>.
+@prefix edintveh: <https://edint.es/def/censo-vehiculos#>.
 @prefix schema: <https://schema.org/>.
 @prefix edintvehiclepermittype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType/>.
 @prefix edintvehiclepermitstatus: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitStatus/>.
 @prefix edintvehiclepermitperiodicity: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitPeriodicity/>.
-@prefix edintzone: <http://vocab.linkeddata.es/datosabiertos/def/commons/zone#>.
+@prefix edintzone: <https://edint.es/def/zona-regulatoria#>.
 @prefix edintvehicletype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleType/>.
 @prefix edintvehiclepropulsiontype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePropulsionType/>.
 @prefix edintvehicleenvironmentalbadge: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleEnvironmentalBadge/>.
