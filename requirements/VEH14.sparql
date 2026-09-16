@@ -14,7 +14,7 @@ ORDER BY ?vehicle
 # Para un tipo de autorización referido por su etiqueta (por ejemplo, “Residente”):
 
 PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
-PREFIX edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/>
+PREFIX edintkos: <https://edint.es/kos/>
 PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
 
 SELECT DISTINCT ?vehicle ?permitType ?label
@@ -36,7 +36,7 @@ ORDER BY ?vehicle
 # Para un tipo de autorización referido por su etiqueta (por ejemplo, “Residente”) sin depender de labels:
 
 PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
-PREFIX edintvehiclepermittype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType/>
+PREFIX edintvehiclepermittype: <https://edint.es/kos/VehiclePermitType/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT DISTINCT ?vehicle ?permitType ?label

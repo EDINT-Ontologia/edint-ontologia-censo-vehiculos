@@ -1,7 +1,7 @@
 prefixes:
-  edintvehicletype: http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleType/
-  edintvehiclepropulsiontype: http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePropulsionType/
-  edintvehicleenvironmentalbadge: http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleEnvironmentalBadge/
+  edintvehicletype: https://edint.es/kos/VehicleType/
+  edintvehiclepropulsiontype: https://edint.es/kos/VehiclePropulsionType/
+  edintvehicleenvironmentalbadge: https://edint.es/kos/VehicleEnvironmentalBadge/
   edintveh: https://edint.es/def/censo-vehiculos#
 
 sources:

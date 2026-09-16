@@ -1,7 +1,7 @@
 prefixes:
-  edintvehiclepermittype: http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType/
-  edintvehiclepermitstatus: http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitStatus/
-  edintvehiclepermitperiodicity: http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitPeriodicity/
+  edintvehiclepermittype: https://edint.es/kos/VehiclePermitType/
+  edintvehiclepermitstatus: https://edint.es/kos/VehiclePermitStatus/
+  edintvehiclepermitperiodicity: https://edint.es/kos/VehiclePermitPeriodicity/
   edintveh: https://edint.es/def/censo-vehiculos#
 
 sources:

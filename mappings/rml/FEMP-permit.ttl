@@ -1,6 +1,6 @@
-@prefix edintvehiclepermittype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType/>.
-@prefix edintvehiclepermitstatus: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitStatus/>.
-@prefix edintvehiclepermitperiodicity: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitPeriodicity/>.
+@prefix edintvehiclepermittype: <https://edint.es/kos/VehiclePermitType/>.
+@prefix edintvehiclepermitstatus: <https://edint.es/kos/VehiclePermitStatus/>.
+@prefix edintvehiclepermitperiodicity: <https://edint.es/kos/VehiclePermitPeriodicity/>.
 @prefix edintveh: <https://edint.es/def/censo-vehiculos#>.
 @prefix rr: <http://www.w3.org/ns/r2rml#>.
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
@@ -70,7 +70,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType/{tipo_autorizacion}";
+			rr:template "https://edint.es/kos/VehiclePermitType/{tipo_autorizacion}";
 			rr:termType rr:IRI
 		];
 	];
@@ -81,7 +81,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitStatus/{estado}";
+			rr:template "https://edint.es/kos/VehiclePermitStatus/{estado}";
 			rr:termType rr:IRI
 		];
 	];
@@ -92,7 +92,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitPeriodicity/{periodicidad}";
+			rr:template "https://edint.es/kos/VehiclePermitPeriodicity/{periodicidad}";
 			rr:termType rr:IRI
 		];
 	];

@@ -30,7 +30,7 @@ ORDER BY ?permit
 # Para buscar permisos solo por etiqueta de su estado (p. ej. “Activo”):
 
 PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
-PREFIX edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/>
+PREFIX edintkos: <https://edint.es/kos/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT ?permit
