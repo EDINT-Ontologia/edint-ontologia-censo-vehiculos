@@ -2,7 +2,7 @@
 # VEH22: ¿Qué vehículos tienen una autorización (de periodicidad) anual en un tramo determinado?
 
 PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
-PREFIX edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/>
+PREFIX edintkos: <https://edint.es/kos/>
 PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
 
 SELECT DISTINCT ?vehicle ?permit
@@ -25,7 +25,7 @@ ORDER BY ?vehicle
 # Añadiendo estado de autorización:
 
 PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
-PREFIX edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/>
+PREFIX edintkos: <https://edint.es/kos/>
 PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
 
 SELECT DISTINCT ?vehicle ?permit ?typeLabel ?statusLabel
@@ -34,7 +34,7 @@ WHERE {
             edintveh:authorisesVehicle ?vehicle ;
             edintveh:authorisesInSegment <URI_DEL_TRAMO> ;
             edintveh:permitPeriodicity
-                <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitPeriodicity/Annual> .
+                <https://edint.es/kos/VehiclePermitPeriodicity/Annual> .
 
     OPTIONAL {
         ?permit edintveh:permitType ?type ;

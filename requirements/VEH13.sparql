@@ -2,7 +2,7 @@
 # VEH13: ¿Qué tipos de autorizaciones existen?
 
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/>
+PREFIX edintkos: <https://edint.es/kos/>
 
 SELECT ?permitType ?label
 WHERE {
@@ -17,7 +17,7 @@ ORDER BY ?label
 # Solo en español:
 
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/>
+PREFIX edintkos: <https://edint.es/kos/>
 
 SELECT ?permitType ?labelEs
 WHERE {
@@ -32,7 +32,7 @@ ORDER BY ?labelEs
 # Cuántos tipos:
 
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/>
+PREFIX edintkos: <https://edint.es/kos/>
 
 SELECT (COUNT(?permitType) AS ?numTypes)
 WHERE {
@@ -43,7 +43,7 @@ WHERE {
 # Autorizaciones por tipo:
 
 PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
-PREFIX edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/>
+PREFIX edintkos: <https://edint.es/kos/>
 PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
 
 SELECT ?permit ?permitType ?permitTypeLabel

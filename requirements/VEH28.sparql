@@ -2,8 +2,8 @@
 # VEH28: ¿Quiénes son propietarios de vehículos eléctricos con autorización activa?
 
 PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
-PREFIX edintvehiclepermitstatus: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitStatus/>
-PREFIX edintvehiclepropulsiontype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePropulsionType/>
+PREFIX edintvehiclepermitstatus: <https://edint.es/kos/VehiclePermitStatus/>
+PREFIX edintvehiclepropulsiontype: <https://edint.es/kos/VehiclePropulsionType/>
 
 SELECT DISTINCT ?owner ?vehicle ?permit
 WHERE {
