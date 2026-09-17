@@ -1,22 +1,26 @@
 # Ontología para la representación del censo/registro de vehículos
 
+[![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/censo-vehiculos)
+![Prefijo](https://img.shields.io/badge/prefijo-edintveh-informational)
+[![Licencia](https://img.shields.io/badge/licencia-CC%20BY--SA%204.0-lightgrey)](LICENSE)
+
 Esta ontología permite representar el dominio del censo o registro de vehículos que muchas entidades locales gestionan para distintos propósitos (cobro del impuesto de vehículos de tracción mecánica - IVTM - y gestión de la movilidad dentro de la ciudad, entre otros). 
 
 Está siendo desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es/)). Asimismo, fue identificada como una ontología relevante para la representación de datos gestionados por entidades locales en la guía [Datos abiertos FEMP 2019: 40 conjuntos de datos a publicar por las Entidades Locales](http://femp.femp.es/files/3580-1937-fichero/DATOS%20ABIERTOS%20FEMP%202019.pdf), tal y como se describe también en la correspondiente nota de [datos.gob.es](https://datos.gob.es/es/conocimiento/datos-abiertos-femp-2019-40-conjuntos-de-datos-publicar-por-las-entidades-locales), y por tanto recogido en el [repositorio Github de apoyo a la iniciativa](https://github.com/opencitydata/vocab-transporte-censo-vehiculos), que queda deprecado una vez se lanza este repositorio.
 
-# Propósito y alcance de la ontología (Purpose and scope of the ontology)
+## Propósito y alcance de la ontología (Purpose and scope of the ontology)
 
 El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales del censo o registro de vehículos. Su alcance se limita a los datos que pueden ser utilizados con los propósitos de cobro de impuestos por parte de las entidades locales o de gestión de la movilidad (permisos de aparcamiento, permisos de acceso a zonas específicas, etc.), que son parte de las funciones habituales de las entidades locales. Quedan fuera del alcance de la ontología otros aspectos relacionados con los vehículos, como pueden ser los datos de sus permisos de circulación, inspecciones técnicas, etc., que podrían ser objeto de una extensión de esta ontología o de su evolución en el futuro, si se considera relevante. 
 
-# Prefijo y espacio de nombres (Prefix and namespace)
+## Prefijo y espacio de nombres (Prefix and namespace)
 
-El prefijo de esta ontología es edintveh. Se publica en el espacio de nombres: https://edint.es/def/censo-vehiculos# 
+El prefijo de esta ontología es `edintveh` y se publica bajo el espacio de nombres https://edint.es/def/censo-vehiculos#
 
-# Modelo conceptual (Ontology Conceptualization)
+## Modelo conceptual (Ontology Conceptualization)
 
 ![Diagrama del modelo conceptual](diagrams/diagram.png)
 
-# Estructura del repositorio (Repository structure)
+## Estructura del repositorio (Repository structure)
 
 El repositorio contiene las siguientes carpetas:
 
@@ -30,11 +34,11 @@ El repositorio contiene las siguientes carpetas:
 | **requirements/** | Contains all documents used to define the ontology’s requirements: data example, competency questions, functional requirements, use cases, etc. |
 | **shapes/** | Contains the SHACL shapes used to define and validate ontology constraints. |
 
-# Mantenimiento y evolución (Maintenance and evolution)
+## Mantenimiento y evolución (Maintenance and evolution)
 
 Para manejar las incidencias o mejoras sugeridas con respecto a la ontología, recomendamos seguir las guías proporcionadas en ([Issues Management](./ISSUES.md)) para generar una incidencia.
 
-# Financiación (Funding)
+## Financiación (Funding)
 
 Esta ontología ha sido desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es/)). 
 
