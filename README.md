@@ -10,7 +10,7 @@ El propósito de esta ontología es el de proporcionar un vocabulario común par
 
 # Prefijo y espacio de nombres (Prefix and namespace)
 
-El prefijo de esta ontologías es edintveh. Se publica en el espacio de nombres: https://edint.es/def/censo-vehiculos# 
+El prefijo de esta ontología es edintveh. Se publica en el espacio de nombres: https://edint.es/def/censo-vehiculos# 
 
 # Modelo conceptual (Ontology Conceptualization)
 
