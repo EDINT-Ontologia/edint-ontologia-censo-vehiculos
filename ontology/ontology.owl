@@ -18,8 +18,8 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:edintkos="https://edint.es/kos/"
      xmlns:edintveh="https://edint.es/def/censo-vehiculos#"
-     xmlns:edinttraf="hhttps://edint.es/def/trafico#"
-     xmlns:edintzone="https://edint.es/def/zone#"
+     xmlns:edinttraf="https://edint.es/def/trafico#"
+     xmlns:edintzone="https://edint.es/def/zona-regulatoria#"
      xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:widoco="https://w3id.org/widoco/vocab#">    <owl:Ontology rdf:about="https://edint.es/def/censo-vehiculos">
         <owl:versionIRI rdf:resource="https://edint.es/def/censo-vehiculos/0.2.1"/>
@@ -207,7 +207,7 @@
 
     <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#authorisesInSegment">
         <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Permit"/>
-        <rdfs:range rdf:resource="hhttps://edint.es/def/trafico#StreetSection"/>
+        <rdfs:range rdf:resource="https://edint.es/def/trafico#StreetSection"/>
         <rdfs:comment xml:lang="es">Identifica el segmento de vía para el cual la autorización da permiso para pasar o aparcar</rdfs:comment>
         <rdfs:comment xml:lang="en">It identifies a segment where the permit authorises the vehicle to go through or park</rdfs:comment>
         <rdfs:label xml:lang="en">authorises in segment</rdfs:label>
@@ -467,9 +467,9 @@
     
 
 
-    <!-- hhttps://edint.es/def/trafico#StreetSection -->
+    <!-- https://edint.es/def/trafico#StreetSection -->
 
-    <owl:Class rdf:about="hhttps://edint.es/def/trafico#StreetSection"/>
+    <owl:Class rdf:about="https://edint.es/def/trafico#StreetSection"/>
     
 
 
@@ -537,9 +537,9 @@
     
 
 
-    <!-- https://edint.es/def/zone#RegulatedZone -->
+    <!-- https://edint.es/def/zona-regulatoria#RegulatedZone -->
 
-    <owl:Class rdf:about="https://edint.es/def/zone#RegulatedZone">
+    <owl:Class rdf:about="https://edint.es/def/zona-regulatoria#RegulatedZone">
         <rdfs:comment xml:lang="es">Area a la que se aplica una regulacion o normativa particular.</rdfs:comment>
         <rdfs:comment xml:lang="en">Area to which a particular regulation or policy applies.</rdfs:comment>
         <rdfs:label xml:lang="en">Regulated Zone</rdfs:label>
@@ -642,7 +642,14 @@
         <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
         <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
         <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
-    </owl:Ontology>
+            <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="https://saref.etsi.org/saref4auto/Vehicle"/>
+                <rdfs:label xml:lang="es">SAREF4AUTO</rdfs:label>
+                <rdfs:label xml:lang="en">SAREF4AUTO</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+</owl:Ontology>
 </rdf:RDF>
 
 
