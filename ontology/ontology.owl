@@ -649,6 +649,13 @@
                 <rdfs:label xml:lang="en">SAREF4AUTO</rdfs:label>
             </rdf:Description>
         </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/trafico"/>
+                <rdfs:label xml:lang="es">Tráfico (edinttraf)</rdfs:label>
+                <rdfs:label xml:lang="en">Traffic (edinttraf)</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
 </owl:Ontology>
 </rdf:RDF>
 
