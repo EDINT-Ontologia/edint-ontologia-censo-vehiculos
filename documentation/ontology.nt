@@ -1,22 +1,58 @@
-<https://edint.es/def/censovehiculos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://edint.es/def/censovehiculos> <http://www.w3.org/2002/07/owl#versionIRI> <https://edint.es/def/censovehiculos> .
-<https://edint.es/def/censovehiculos> <http://purl.org/dc/terms/created> "2026-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/censovehiculos> <http://purl.org/dc/terms/creator> "Daniel Doña"@es .
-<https://edint.es/def/censovehiculos> <http://purl.org/dc/terms/creator> "Edna Ruckhaus" .
-<https://edint.es/def/censovehiculos> <http://purl.org/dc/terms/creator> "Lucía Sánchez" .
-<https://edint.es/def/censovehiculos> <http://purl.org/dc/terms/creator> "Maria del Socorro Bernardos" .
-<https://edint.es/def/censovehiculos> <http://purl.org/dc/terms/creator> "Oscar Corcho" .
-<https://edint.es/def/censovehiculos> <http://purl.org/dc/terms/description> "El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales del censo o registro de vehículos. Su alcance se limita a los datos que pueden ser utilizados con los propósitos de cobro de impuestos por parte de las entidades locales o de gestión de la movilidad (permisos de aparcamiento, permisos de acceso a zonas específicas, etc.), que son parte de las funciones habituales de las entidades locales. Quedan fuera del alcance de la ontología otros aspectos relacionados con los vehículos, como pueden ser los datos de sus permisos de circulación, inspecciones técnicas, etc., que podrían ser objeto de una extensión de esta ontología o de su evolución en el futuro, si se considera relevante."@es .
-<https://edint.es/def/censovehiculos> <http://purl.org/dc/terms/description> "The purpose of this ontology is to provide a common vocabulary for representing the main entities and data of the vehicle census or registry. Its scope is limited to the data that may be used for purposes such as tax collection by local authorities or mobility management (parking permits, access permits to specific zones, etc.), which are part of the usual functions of local entities. Other aspects related to vehicles, such as data concerning driving permits, technical inspections, and similar information, are outside the scope of this ontology. These could be addressed through an extension of this ontology or through its future evolution, if considered relevant."@en .
-<https://edint.es/def/censovehiculos> <http://purl.org/dc/terms/hasFormat> "https://edint.es/def/censovehiculos.owl" .
-<https://edint.es/def/censovehiculos> <http://purl.org/dc/terms/issued> "2026-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/censovehiculos> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://edint.es/def/censovehiculos> <http://purl.org/dc/terms/title> "Ontología del Censo de Vehículos"@es .
-<https://edint.es/def/censovehiculos> <http://purl.org/dc/terms/title> "Vehicle Census Ontology"@en .
-<https://edint.es/def/censovehiculos> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintveh" .
-<https://edint.es/def/censovehiculos> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/censovehiculos#> .
-<https://edint.es/def/censovehiculos> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-censo-vehiculos/releases/tag/v0.2.0> .
-<https://edint.es/def/censovehiculos> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.1" .
+<https://edint.es/def/censo-vehiculos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://edint.es/def/censo-vehiculos> <http://www.w3.org/2002/07/owl#versionIRI> <https://edint.es/def/censo-vehiculos/0.2.1> .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/abstract> "El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales del censo o registro de vehículos. Su alcance se limita a los datos que pueden ser utilizados con los propósitos de cobro de impuestos por parte de las entidades locales o de gestión de la movilidad (permisos de aparcamiento, permisos de acceso a zonas específicas, etc.), que son parte de las funciones habituales de las entidades locales. Quedan fuera del alcance de la ontología otros aspectos relacionados con los vehículos, como pueden ser los datos de sus permisos de circulación, inspecciones técnicas, etc., que podrían ser objeto de una extensión de esta ontología o de su evolución en el futuro, si se considera relevante."@es .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/abstract> "The purpose of this ontology is to provide a common vocabulary for representing the key entities and data associated with vehicle registration or vehicle census records. Its scope is limited to data used for local government functions such as tax collection and mobility management (e.g., parking permits, access permits for specific zones). Aspects such as vehicle registration certificates and technical inspection records fall outside the scope of this ontology, though they could be addressed through future extensions or updates if deemed relevant."@en .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/bibliographicCitation> "EDINT Vehicle Census Ontology. EDINT. Revision: v0.2.1."@en .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/bibliographicCitation> "Ontología EDINT del Censo de Vehículos. EDINT. Revisión: v0.2.1."@es .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/created> "2026-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/creator> _:genid1 .
+_:genid1 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/creator> _:genid2 .
+_:genid2 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/creator> _:genid3 .
+_:genid3 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/creator> _:genid4 .
+_:genid4 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid4 <http://xmlns.com/foaf/0.1/name> "Maria del Socorro Bernardos" .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/creator> _:genid5 .
+_:genid5 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid5 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/description> "El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales del censo o registro de vehículos. Su alcance se limita a los datos que pueden ser utilizados con los propósitos de cobro de impuestos por parte de las entidades locales o de gestión de la movilidad (permisos de aparcamiento, permisos de acceso a zonas específicas, etc.), que son parte de las funciones habituales de las entidades locales. Quedan fuera del alcance de la ontología otros aspectos relacionados con los vehículos, como pueden ser los datos de sus permisos de circulación, inspecciones técnicas, etc., que podrían ser objeto de una extensión de esta ontología o de su evolución en el futuro, si se considera relevante."@es .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/description> "The purpose of this ontology is to provide a common vocabulary for representing the main entities and data of the vehicle census or registry. Its scope is limited to the data that may be used for purposes such as tax collection by local authorities or mobility management (parking permits, access permits to specific zones, etc.), which are part of the usual functions of local entities. Other aspects related to vehicles, such as data concerning driving permits, technical inspections, and similar information, are outside the scope of this ontology. These could be addressed through an extension of this ontology or through its future evolution, if considered relevant."@en .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/hasFormat> "https://edint.es/def/censo-vehiculos.owl" .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/issued> "2026-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/modified> "2026-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/publisher> _:genid6 .
+_:genid6 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
+_:genid6 <http://xmlns.com/foaf/0.1/name> "FEMP" .
+_:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/title> "EDINT Vehicle Census Ontology"@en .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/title> "Ontología EDINT del Censo de Vehículos"@es .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintveh" .
+<https://edint.es/def/censo-vehiculos> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/censo-vehiculos#> .
+<https://edint.es/def/censo-vehiculos> <http://www.w3.org/2000/01/rdf-schema#label> "Censo de Vehículos"@es .
+<https://edint.es/def/censo-vehiculos> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle Census"@en .
+<https://edint.es/def/censo-vehiculos> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-censo-vehiculos/releases/tag/v0.2.0> .
+<https://edint.es/def/censo-vehiculos> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.1" .
+<https://edint.es/def/censo-vehiculos> <https://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-ontologia-censo-vehiculos> .
+<https://edint.es/def/censo-vehiculos> <https://schema.org/creativeWorkStatus> "Ontology Specification"@en .
+<https://edint.es/def/censo-vehiculos> <https://schema.org/funding> "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" .
+<https://edint.es/def/censo-vehiculos> <https://w3id.org/widoco/vocab#jsonldSerialization> "ontology.jsonld" .
+<https://edint.es/def/censo-vehiculos> <https://w3id.org/widoco/vocab#ntSerialization> "ontology.nt" .
+<https://edint.es/def/censo-vehiculos> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
+<https://edint.es/def/censo-vehiculos> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
+<https://edint.es/def/censo-vehiculos> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
+_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/saref4auto/Vehicle> .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF4AUTO"@es .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF4AUTO"@en .
+<https://edint.es/def/censo-vehiculos> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid8 .
+_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/trafico> .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "Tráfico (edinttraf)"@es .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "Traffic (edinttraf)"@en .
 # 
 # 
 # #################################################################
@@ -25,6 +61,12 @@
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -47,6 +89,12 @@
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -62,8 +110,44 @@
 # http://www.w3.org/2002/07/owl#versionInfo
 <http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/affiliation
+<https://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/codeRepository
+<https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/creativeWorkStatus
+<https://schema.org/creativeWorkStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/funding
+<https://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#jsonldSerialization
+<https://w3id.org/widoco/vocab#jsonldSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#ntSerialization
+<https://w3id.org/widoco/vocab#ntSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#rdfxmlSerialization
+<https://w3id.org/widoco/vocab#rdfxmlSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#turtleSerialization
+<https://w3id.org/widoco/vocab#turtleSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#vocabularyIRI
+<https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#vocabularyLabel
+<https://w3id.org/widoco/vocab#vocabularyLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -92,161 +176,161 @@
 # http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# https://edint.es/def/censovehiculos#authorisesInSegment
-<https://edint.es/def/censovehiculos#authorisesInSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://edint.es/def/censovehiculos#authorisesInSegment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Permit> .
-<https://edint.es/def/censovehiculos#authorisesInSegment> <http://www.w3.org/2000/01/rdf-schema#range> <hhttps://edint.es/def/trafico#StreetSection> .
-<https://edint.es/def/censovehiculos#authorisesInSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica el segmento de vía para el cual la autorización da permiso para pasar o aparcar"@es .
-<https://edint.es/def/censovehiculos#authorisesInSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies a segment where the permit authorises the vehicle to go through or park"@en .
-<https://edint.es/def/censovehiculos#authorisesInSegment> <http://www.w3.org/2000/01/rdf-schema#label> "authorises in segment"@en .
-<https://edint.es/def/censovehiculos#authorisesInSegment> <http://www.w3.org/2000/01/rdf-schema#label> "autoriza en tramo"@es .
+# https://edint.es/def/censo-vehiculos#authorisesInSegment
+<https://edint.es/def/censo-vehiculos#authorisesInSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censo-vehiculos#authorisesInSegment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Permit> .
+<https://edint.es/def/censo-vehiculos#authorisesInSegment> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/trafico#StreetSection> .
+<https://edint.es/def/censo-vehiculos#authorisesInSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica el segmento de vía para el cual la autorización da permiso para pasar o aparcar"@es .
+<https://edint.es/def/censo-vehiculos#authorisesInSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies a segment where the permit authorises the vehicle to go through or park"@en .
+<https://edint.es/def/censo-vehiculos#authorisesInSegment> <http://www.w3.org/2000/01/rdf-schema#label> "authorises in segment"@en .
+<https://edint.es/def/censo-vehiculos#authorisesInSegment> <http://www.w3.org/2000/01/rdf-schema#label> "autoriza en tramo"@es .
 # 
-# https://edint.es/def/censovehiculos#authorisesVehicle
-<https://edint.es/def/censovehiculos#authorisesVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://edint.es/def/censovehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Permit> .
-<https://edint.es/def/censovehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/censovehiculos#Vehicle> .
-<https://edint.es/def/censovehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica el vehículo al que se refiere la autorización"@es .
-<https://edint.es/def/censovehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the vehicle for which the permit is issued"@en .
-<https://edint.es/def/censovehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "authorises vehicle"@en .
-<https://edint.es/def/censovehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "autoriza vehículo"@es .
+# https://edint.es/def/censo-vehiculos#authorisesVehicle
+<https://edint.es/def/censo-vehiculos#authorisesVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censo-vehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Permit> .
+<https://edint.es/def/censo-vehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/censo-vehiculos#Vehicle> .
+<https://edint.es/def/censo-vehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica el vehículo al que se refiere la autorización"@es .
+<https://edint.es/def/censo-vehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the vehicle for which the permit is issued"@en .
+<https://edint.es/def/censo-vehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "authorises vehicle"@en .
+<https://edint.es/def/censo-vehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "autoriza vehículo"@es .
 # 
-# https://edint.es/def/censovehiculos#environmentalBadge
-<https://edint.es/def/censovehiculos#environmentalBadge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://edint.es/def/censovehiculos#environmentalBadge> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Vehicle> .
-<https://edint.es/def/censovehiculos#environmentalBadge> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
-_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehicleEnvironmentalBadge> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://edint.es/def/censovehiculos#environmentalBadge> <http://www.w3.org/2000/01/rdf-schema#comment> "Distintivo ambiental asignado a un vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de autorización (por ejemplo, ECO, B, C, etc.)"@es .
-<https://edint.es/def/censovehiculos#environmentalBadge> <http://www.w3.org/2000/01/rdf-schema#comment> "Environmental badge assigned to a vehicle. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., ECO, B, C, etc.)."@en .
-<https://edint.es/def/censovehiculos#environmentalBadge> <http://www.w3.org/2000/01/rdf-schema#label> "distintivo ambiental del vehículo"@es .
-<https://edint.es/def/censovehiculos#environmentalBadge> <http://www.w3.org/2000/01/rdf-schema#label> "environmental badge"@en .
-# 
-# https://edint.es/def/censovehiculos#permitOwner
-<https://edint.es/def/censovehiculos#permitOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://edint.es/def/censovehiculos#permitOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Permit> .
-<https://edint.es/def/censovehiculos#permitOwner> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/censovehiculos#Owner> .
-<https://edint.es/def/censovehiculos#permitOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica al titular (persona u organización) para el cual la autorización está expedida"@es .
-<https://edint.es/def/censovehiculos#permitOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the person or organisation for which the permit has been issued"@en .
-<https://edint.es/def/censovehiculos#permitOwner> <http://www.w3.org/2000/01/rdf-schema#label> "permit owner"@en .
-<https://edint.es/def/censovehiculos#permitOwner> <http://www.w3.org/2000/01/rdf-schema#label> "titular autorización"@es .
-# 
-# https://edint.es/def/censovehiculos#permitPeriodicity
-<https://edint.es/def/censovehiculos#permitPeriodicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://edint.es/def/censovehiculos#permitPeriodicity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Permit> .
-<https://edint.es/def/censovehiculos#permitPeriodicity> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehiclePermitPeriodicity> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://edint.es/def/censovehiculos#permitPeriodicity> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica la periodicidad de la autorización para un vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de autorización (por ejemplo, mensual, anual, etc.)"@es .
-<https://edint.es/def/censovehiculos#permitPeriodicity> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the periodicity of a vehicle permit. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., monhtly, annual, etc.)."@en .
-<https://edint.es/def/censovehiculos#permitPeriodicity> <http://www.w3.org/2000/01/rdf-schema#label> "periodicidad de la autorización"@es .
-<https://edint.es/def/censovehiculos#permitPeriodicity> <http://www.w3.org/2000/01/rdf-schema#label> "permit periodicity"@en .
-# 
-# https://edint.es/def/censovehiculos#permitStatus
-<https://edint.es/def/censovehiculos#permitStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://edint.es/def/censovehiculos#permitStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Permit> .
-<https://edint.es/def/censovehiculos#permitStatus> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+# https://edint.es/def/censo-vehiculos#environmentalBadge
+<https://edint.es/def/censo-vehiculos#environmentalBadge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censo-vehiculos#environmentalBadge> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Vehicle> .
+<https://edint.es/def/censo-vehiculos#environmentalBadge> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
-_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehiclePermitStatus> .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehicleEnvironmentalBadge> .
 _:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://edint.es/def/censovehiculos#permitStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica el estado de la autorización para un vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de autorización (por ejemplo, activo, inactivo, rechazado, etc.)"@es .
-<https://edint.es/def/censovehiculos#permitStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the status of a vehicle permit. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., active, inactive, rejected, etc.)."@en .
-<https://edint.es/def/censovehiculos#permitStatus> <http://www.w3.org/2000/01/rdf-schema#label> "estado de autorización"@es .
-<https://edint.es/def/censovehiculos#permitStatus> <http://www.w3.org/2000/01/rdf-schema#label> "permit status"@en .
+<https://edint.es/def/censo-vehiculos#environmentalBadge> <http://www.w3.org/2000/01/rdf-schema#comment> "Distintivo ambiental asignado a un vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de autorización (por ejemplo, ECO, B, C, etc.)"@es .
+<https://edint.es/def/censo-vehiculos#environmentalBadge> <http://www.w3.org/2000/01/rdf-schema#comment> "Environmental badge assigned to a vehicle. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., ECO, B, C, etc.)."@en .
+<https://edint.es/def/censo-vehiculos#environmentalBadge> <http://www.w3.org/2000/01/rdf-schema#label> "distintivo ambiental del vehículo"@es .
+<https://edint.es/def/censo-vehiculos#environmentalBadge> <http://www.w3.org/2000/01/rdf-schema#label> "environmental badge"@en .
 # 
-# https://edint.es/def/censovehiculos#permitType
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Permit> .
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
+# https://edint.es/def/censo-vehiculos#permitOwner
+<https://edint.es/def/censo-vehiculos#permitOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censo-vehiculos#permitOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Permit> .
+<https://edint.es/def/censo-vehiculos#permitOwner> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/censo-vehiculos#Owner> .
+<https://edint.es/def/censo-vehiculos#permitOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica al titular (persona u organización) para el cual la autorización está expedida"@es .
+<https://edint.es/def/censo-vehiculos#permitOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the person or organisation for which the permit has been issued"@en .
+<https://edint.es/def/censo-vehiculos#permitOwner> <http://www.w3.org/2000/01/rdf-schema#label> "permit owner"@en .
+<https://edint.es/def/censo-vehiculos#permitOwner> <http://www.w3.org/2000/01/rdf-schema#label> "titular autorización"@es .
+# 
+# https://edint.es/def/censo-vehiculos#permitPeriodicity
+<https://edint.es/def/censo-vehiculos#permitPeriodicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censo-vehiculos#permitPeriodicity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Permit> .
+<https://edint.es/def/censo-vehiculos#permitPeriodicity> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid16 .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
-_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehiclePermitType> .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehiclePermitPeriodicity> .
 _:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica el tipo de autorización para un vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de autorización."@es .
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the type of vehicle permit. The range is a SKOS concept that belongs to a controlled list of permit types."@en .
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#label> "permit type"@en .
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de autorizacion"@es .
+<https://edint.es/def/censo-vehiculos#permitPeriodicity> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica la periodicidad de la autorización para un vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de autorización (por ejemplo, mensual, anual, etc.)"@es .
+<https://edint.es/def/censo-vehiculos#permitPeriodicity> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the periodicity of a vehicle permit. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., monhtly, annual, etc.)."@en .
+<https://edint.es/def/censo-vehiculos#permitPeriodicity> <http://www.w3.org/2000/01/rdf-schema#label> "periodicidad de la autorización"@es .
+<https://edint.es/def/censo-vehiculos#permitPeriodicity> <http://www.w3.org/2000/01/rdf-schema#label> "permit periodicity"@en .
 # 
-# https://edint.es/def/censovehiculos#propulsionType
-<https://edint.es/def/censovehiculos#propulsionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://edint.es/def/censovehiculos#propulsionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Vehicle> .
-<https://edint.es/def/censovehiculos#propulsionType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid17 .
+# https://edint.es/def/censo-vehiculos#permitStatus
+<https://edint.es/def/censo-vehiculos#permitStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censo-vehiculos#permitStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Permit> .
+<https://edint.es/def/censo-vehiculos#permitStatus> <http://www.w3.org/2000/01/rdf-schema#range> _:genid17 .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid20 .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
-_:genid19 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehiclePropulsionType> .
+_:genid19 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehiclePermitStatus> .
 _:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://edint.es/def/censovehiculos#propulsionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Propulsion type of a vehicle. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., Diesel, Petrol, Electrical, etc.)."@en .
-<https://edint.es/def/censovehiculos#propulsionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de propulsión de un vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de autorización (por ejemplo, diésel, gasolina, eléctrico, etc.)"@es .
-<https://edint.es/def/censovehiculos#propulsionType> <http://www.w3.org/2000/01/rdf-schema#label> "propulsion type"@en .
-<https://edint.es/def/censovehiculos#propulsionType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de propulsión"@es .
+<https://edint.es/def/censo-vehiculos#permitStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica el estado de la autorización para un vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de autorización (por ejemplo, activo, inactivo, rechazado, etc.)"@es .
+<https://edint.es/def/censo-vehiculos#permitStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the status of a vehicle permit. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., active, inactive, rejected, etc.)."@en .
+<https://edint.es/def/censo-vehiculos#permitStatus> <http://www.w3.org/2000/01/rdf-schema#label> "estado de autorización"@es .
+<https://edint.es/def/censo-vehiculos#permitStatus> <http://www.w3.org/2000/01/rdf-schema#label> "permit status"@en .
 # 
-# https://edint.es/def/censovehiculos#registeredOwner
-<https://edint.es/def/censovehiculos#registeredOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://edint.es/def/censovehiculos#registeredOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Vehicle> .
-<https://edint.es/def/censovehiculos#registeredOwner> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/censovehiculos#Owner> .
-<https://edint.es/def/censovehiculos#registeredOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica al titular (persona u organización) del vehículo"@es .
-<https://edint.es/def/censovehiculos#registeredOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the person or organisation who owns the vehicle"@en .
-<https://edint.es/def/censovehiculos#registeredOwner> <http://www.w3.org/2000/01/rdf-schema#label> "registered owner"@en .
-<https://edint.es/def/censovehiculos#registeredOwner> <http://www.w3.org/2000/01/rdf-schema#label> "titular registrado"@es .
-# 
-# https://edint.es/def/censovehiculos#vehicleType
-<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Vehicle> .
-<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid21 .
+# https://edint.es/def/censo-vehiculos#permitType
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Permit> .
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid21 .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid21 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid24 .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
-_:genid23 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehicleType> .
+_:genid23 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehiclePermitType> .
 _:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de autorización (por ejemplo, turismo, furgoneta, caravana, etc.)"@es .
-<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of vehicle. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., van, truck, caravan, etc.)."@en .
-<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de vehículo"@es .
-<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle type"@en .
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica el tipo de autorización para un vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de autorización."@es .
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the type of vehicle permit. The range is a SKOS concept that belongs to a controlled list of permit types."@en .
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#label> "permit type"@en .
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de autorizacion"@es .
+# 
+# https://edint.es/def/censo-vehiculos#propulsionType
+<https://edint.es/def/censo-vehiculos#propulsionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censo-vehiculos#propulsionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Vehicle> .
+<https://edint.es/def/censo-vehiculos#propulsionType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid25 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehiclePropulsionType> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://edint.es/def/censo-vehiculos#propulsionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Propulsion type of a vehicle. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., Diesel, Petrol, Electrical, etc.)."@en .
+<https://edint.es/def/censo-vehiculos#propulsionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de propulsión de un vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de autorización (por ejemplo, diésel, gasolina, eléctrico, etc.)"@es .
+<https://edint.es/def/censo-vehiculos#propulsionType> <http://www.w3.org/2000/01/rdf-schema#label> "propulsion type"@en .
+<https://edint.es/def/censo-vehiculos#propulsionType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de propulsión"@es .
+# 
+# https://edint.es/def/censo-vehiculos#registeredOwner
+<https://edint.es/def/censo-vehiculos#registeredOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censo-vehiculos#registeredOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Vehicle> .
+<https://edint.es/def/censo-vehiculos#registeredOwner> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/censo-vehiculos#Owner> .
+<https://edint.es/def/censo-vehiculos#registeredOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifica al titular (persona u organización) del vehículo"@es .
+<https://edint.es/def/censo-vehiculos#registeredOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the person or organisation who owns the vehicle"@en .
+<https://edint.es/def/censo-vehiculos#registeredOwner> <http://www.w3.org/2000/01/rdf-schema#label> "registered owner"@en .
+<https://edint.es/def/censo-vehiculos#registeredOwner> <http://www.w3.org/2000/01/rdf-schema#label> "titular registrado"@es .
+# 
+# https://edint.es/def/censo-vehiculos#vehicleType
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Vehicle> .
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid29 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehicleType> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de autorización (por ejemplo, turismo, furgoneta, caravana, etc.)"@es .
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of vehicle. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., van, truck, caravan, etc.)."@en .
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de vehículo"@es .
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle type"@en .
 # 
 # 
 # 
@@ -257,41 +341,41 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # #################################################################
 # 
 # 
-# https://edint.es/def/censovehiculos#activationDate
-<https://edint.es/def/censovehiculos#activationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://edint.es/def/censovehiculos#activationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Permit> .
-<https://edint.es/def/censovehiculos#activationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/censovehiculos#activationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "La fecha de activación de la autorización."@es .
-<https://edint.es/def/censovehiculos#activationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the authorization is activated."@en .
-<https://edint.es/def/censovehiculos#activationDate> <http://www.w3.org/2000/01/rdf-schema#label> "Date of Activation"@en .
-<https://edint.es/def/censovehiculos#activationDate> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de activación"@es .
+# https://edint.es/def/censo-vehiculos#activationDate
+<https://edint.es/def/censo-vehiculos#activationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://edint.es/def/censo-vehiculos#activationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Permit> .
+<https://edint.es/def/censo-vehiculos#activationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/censo-vehiculos#activationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "La fecha de activación de la autorización."@es .
+<https://edint.es/def/censo-vehiculos#activationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the authorization is activated."@en .
+<https://edint.es/def/censo-vehiculos#activationDate> <http://www.w3.org/2000/01/rdf-schema#label> "Date of Activation"@en .
+<https://edint.es/def/censo-vehiculos#activationDate> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de activación"@es .
 # 
-# https://edint.es/def/censovehiculos#beginningDate
-<https://edint.es/def/censovehiculos#beginningDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://edint.es/def/censovehiculos#beginningDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Permit> .
-<https://edint.es/def/censovehiculos#beginningDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/censovehiculos#beginningDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de inicio del periodo de la autorización."@es .
-<https://edint.es/def/censovehiculos#beginningDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Starting date of the authorization period."@en .
-<https://edint.es/def/censovehiculos#beginningDate> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de inicio"@es .
-<https://edint.es/def/censovehiculos#beginningDate> <http://www.w3.org/2000/01/rdf-schema#label> "Beginning Date" .
+# https://edint.es/def/censo-vehiculos#beginningDate
+<https://edint.es/def/censo-vehiculos#beginningDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://edint.es/def/censo-vehiculos#beginningDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Permit> .
+<https://edint.es/def/censo-vehiculos#beginningDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/censo-vehiculos#beginningDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de inicio del periodo de la autorización."@es .
+<https://edint.es/def/censo-vehiculos#beginningDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Starting date of the authorization period."@en .
+<https://edint.es/def/censo-vehiculos#beginningDate> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de inicio"@es .
+<https://edint.es/def/censo-vehiculos#beginningDate> <http://www.w3.org/2000/01/rdf-schema#label> "Beginning Date" .
 # 
-# https://edint.es/def/censovehiculos#endingDate
-<https://edint.es/def/censovehiculos#endingDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://edint.es/def/censovehiculos#endingDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Permit> .
-<https://edint.es/def/censovehiculos#endingDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/censovehiculos#endingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de finalización de vigencia de la autorización"@es .
-<https://edint.es/def/censovehiculos#endingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Permit expiration date"@en .
-<https://edint.es/def/censovehiculos#endingDate> <http://www.w3.org/2000/01/rdf-schema#label> "Ending date"@en .
-<https://edint.es/def/censovehiculos#endingDate> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de finalización"@es .
+# https://edint.es/def/censo-vehiculos#endingDate
+<https://edint.es/def/censo-vehiculos#endingDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://edint.es/def/censo-vehiculos#endingDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Permit> .
+<https://edint.es/def/censo-vehiculos#endingDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/censo-vehiculos#endingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de finalización de vigencia de la autorización"@es .
+<https://edint.es/def/censo-vehiculos#endingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Permit expiration date"@en .
+<https://edint.es/def/censo-vehiculos#endingDate> <http://www.w3.org/2000/01/rdf-schema#label> "Ending date"@en .
+<https://edint.es/def/censo-vehiculos#endingDate> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de finalización"@es .
 # 
-# https://edint.es/def/censovehiculos#licensePlateNumber
-<https://edint.es/def/censovehiculos#licensePlateNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://edint.es/def/censovehiculos#licensePlateNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censovehiculos#Vehicle> .
-<https://edint.es/def/censovehiculos#licensePlateNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://edint.es/def/censovehiculos#licensePlateNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Alphanumeric identifier assigned to a vehicle for registration and identification purposes."@en .
-<https://edint.es/def/censovehiculos#licensePlateNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificador alfanumérico asignado a un vehículo para su registro e identificación"@es .
-<https://edint.es/def/censovehiculos#licensePlateNumber> <http://www.w3.org/2000/01/rdf-schema#label> "License Plate Number"@en .
-<https://edint.es/def/censovehiculos#licensePlateNumber> <http://www.w3.org/2000/01/rdf-schema#label> "Número de matrícula"@es .
+# https://edint.es/def/censo-vehiculos#licensePlateNumber
+<https://edint.es/def/censo-vehiculos#licensePlateNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://edint.es/def/censo-vehiculos#licensePlateNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Vehicle> .
+<https://edint.es/def/censo-vehiculos#licensePlateNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://edint.es/def/censo-vehiculos#licensePlateNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Alphanumeric identifier assigned to a vehicle for registration and identification purposes."@en .
+<https://edint.es/def/censo-vehiculos#licensePlateNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificador alfanumérico asignado a un vehículo para su registro e identificación"@es .
+<https://edint.es/def/censo-vehiculos#licensePlateNumber> <http://www.w3.org/2000/01/rdf-schema#label> "License Plate Number"@en .
+<https://edint.es/def/censo-vehiculos#licensePlateNumber> <http://www.w3.org/2000/01/rdf-schema#label> "Número de matrícula"@es .
 # 
 # 
 # 
@@ -301,9 +385,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # #
 # #################################################################
 # 
-# 
-# hhttps://edint.es/def/trafico#StreetSection
-<hhttps://edint.es/def/trafico#StreetSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -317,43 +398,46 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # http://www.w3.org/2004/02/skos/core#ConceptScheme
 <http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://edint.es/def/censovehiculos#Owner
-<https://edint.es/def/censovehiculos#Owner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://edint.es/def/censovehiculos#Owner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
-_:genid25 <http://www.w3.org/2002/07/owl#unionOf> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Person> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Organization> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://edint.es/def/censovehiculos#Owner> <http://www.w3.org/2000/01/rdf-schema#comment> "Person or organisation that is registered as the owner of a vehicle or of a vehicle permit"@en .
-<https://edint.es/def/censovehiculos#Owner> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona u organización que está registrada como titular de un vehículo o como titular de una autorización para un vehículo"@es .
-<https://edint.es/def/censovehiculos#Owner> <http://www.w3.org/2000/01/rdf-schema#label> "Owner"@en .
-<https://edint.es/def/censovehiculos#Owner> <http://www.w3.org/2000/01/rdf-schema#label> "Titular"@es .
+# https://edint.es/def/censo-vehiculos#Owner
+<https://edint.es/def/censo-vehiculos#Owner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/censo-vehiculos#Owner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#unionOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Person> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Organization> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/censo-vehiculos#Owner> <http://www.w3.org/2000/01/rdf-schema#comment> "Person or organisation that is registered as the owner of a vehicle or of a vehicle permit"@en .
+<https://edint.es/def/censo-vehiculos#Owner> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona u organización que está registrada como titular de un vehículo o como titular de una autorización para un vehículo"@es .
+<https://edint.es/def/censo-vehiculos#Owner> <http://www.w3.org/2000/01/rdf-schema#label> "Owner"@en .
+<https://edint.es/def/censo-vehiculos#Owner> <http://www.w3.org/2000/01/rdf-schema#label> "Titular"@es .
 # 
-# https://edint.es/def/censovehiculos#Permit
-<https://edint.es/def/censovehiculos#Permit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://edint.es/def/censovehiculos#Permit> <http://www.w3.org/2000/01/rdf-schema#comment> "Official permit, usually issued by the city council or the traffic authority, that allows a particular vehicle to access, drive through, or park in an area where entry is restricted or regulated"@en .
-<https://edint.es/def/censovehiculos#Permit> <http://www.w3.org/2000/01/rdf-schema#comment> "Permiso oficial, emitido normalmente por el ayuntamiento o la autoridad de tráfico, que habilita a un vehículo concreto a acceder, circular o estacionar en un área donde el acceso está restringido o regulado"@es .
-<https://edint.es/def/censovehiculos#Permit> <http://www.w3.org/2000/01/rdf-schema#label> "Autorización"@es .
-<https://edint.es/def/censovehiculos#Permit> <http://www.w3.org/2000/01/rdf-schema#label> "Permit"@en .
+# https://edint.es/def/censo-vehiculos#Permit
+<https://edint.es/def/censo-vehiculos#Permit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/censo-vehiculos#Permit> <http://www.w3.org/2000/01/rdf-schema#comment> "Official permit, usually issued by the city council or the traffic authority, that allows a particular vehicle to access, drive through, or park in an area where entry is restricted or regulated"@en .
+<https://edint.es/def/censo-vehiculos#Permit> <http://www.w3.org/2000/01/rdf-schema#comment> "Permiso oficial, emitido normalmente por el ayuntamiento o la autoridad de tráfico, que habilita a un vehículo concreto a acceder, circular o estacionar en un área donde el acceso está restringido o regulado"@es .
+<https://edint.es/def/censo-vehiculos#Permit> <http://www.w3.org/2000/01/rdf-schema#label> "Autorización"@es .
+<https://edint.es/def/censo-vehiculos#Permit> <http://www.w3.org/2000/01/rdf-schema#label> "Permit"@en .
 # 
-# https://edint.es/def/censovehiculos#Vehicle
-<https://edint.es/def/censovehiculos#Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://edint.es/def/censovehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4auto/Vehicle/Vehicle> .
-<https://edint.es/def/censovehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Dispositivo de transporte autopropulsado, junto con cualquier accesorio, por ejemplo remolques, que es un usuario legal de la red de transporte (Fuente: ISO/TS 19091:2019(en))"@es .
-<https://edint.es/def/censovehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Self-propelled transport device, along with any attachments, e.g. trailers, that is a legal user of the transportation network (Source: ISO/TS 19091:2019(en))."@en .
-<https://edint.es/def/censovehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle"@en .
-<https://edint.es/def/censovehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehículo"@es .
+# https://edint.es/def/censo-vehiculos#Vehicle
+<https://edint.es/def/censo-vehiculos#Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/censo-vehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4auto/Vehicle/Vehicle> .
+<https://edint.es/def/censo-vehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Dispositivo de transporte autopropulsado, junto con cualquier accesorio, por ejemplo remolques, que es un usuario legal de la red de transporte (Fuente: ISO/TS 19091:2019(en))"@es .
+<https://edint.es/def/censo-vehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Self-propelled transport device, along with any attachments, e.g. trailers, that is a legal user of the transportation network (Source: ISO/TS 19091:2019(en))."@en .
+<https://edint.es/def/censo-vehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle"@en .
+<https://edint.es/def/censo-vehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehículo"@es .
 # 
-# https://edint.es/def/zone#RegulatedZone
-<https://edint.es/def/zone#RegulatedZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://edint.es/def/zone#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Area a la que se aplica una regulacion o normativa particular."@es .
-<https://edint.es/def/zone#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Area to which a particular regulation or policy applies."@en .
-<https://edint.es/def/zone#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#label> "Regulated Zone"@en .
-<https://edint.es/def/zone#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#label> "Zona regulatoria"@es .
+# https://edint.es/def/trafico#StreetSection
+<https://edint.es/def/trafico#StreetSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://edint.es/def/zona-regulatoria#RegulatedZone
+<https://edint.es/def/zona-regulatoria#RegulatedZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/zona-regulatoria#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Area a la que se aplica una regulacion o normativa particular."@es .
+<https://edint.es/def/zona-regulatoria#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Area to which a particular regulation or policy applies."@en .
+<https://edint.es/def/zona-regulatoria#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#label> "Regulated Zone"@en .
+<https://edint.es/def/zona-regulatoria#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#label> "Zona regulatoria"@es .
 # 
 # https://saref.etsi.org/saref4auto/Vehicle/Vehicle
 <https://saref.etsi.org/saref4auto/Vehicle/Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -407,5 +491,16 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://edint.es/kos/VehicleType
 <https://edint.es/kos/VehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://edint.es/kos/VehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://oeg.fi.upm.es/> <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
