@@ -1,4 +1,4 @@
-# Ontología EDINT del Censo de Vehículos
+# Ontología para la representación del censo/registro de vehículos
 
 Esta ontología permite representar el dominio del censo o registro de vehículos que muchas entidades locales gestionan para distintos propósitos (cobro del impuesto de vehículos de tracción mecánica - IVTM - y gestión de la movilidad dentro de la ciudad, entre otros). 
 
