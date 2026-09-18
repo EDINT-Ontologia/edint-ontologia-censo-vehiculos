@@ -1,4 +1,4 @@
-# Ontología para la representación del censo/registro de vehículos
+# Ontología EDINT del Censo de Vehículos
 
 [![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/censo-vehiculos)
 ![Prefijo](https://img.shields.io/badge/prefijo-edintveh-informational)
