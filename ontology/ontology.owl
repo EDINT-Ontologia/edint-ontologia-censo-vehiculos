@@ -18,7 +18,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:edintkos="https://edint.es/kos/"
      xmlns:edintveh="https://edint.es/def/censo-vehiculos#"
-     xmlns:edinttraf="hhttps://edint.es/def/trafico#"
+     xmlns:edinttraf="https://edint.es/def/trafico#"
      xmlns:edintzone="https://edint.es/def/zona-regulatoria#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
