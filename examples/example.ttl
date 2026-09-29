@@ -1,0 +1,249 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema:   <https://schema.org/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix ex:       <https://example.org/recurso/> .
+@prefix edinttraf: <http://vocab.ciudadesabiertas.es/def/transporte/trafico#> .
+@prefix edintzone: <https://edint.es/def/zona-regulatoria#> .
+@prefix edintveh: <https://edint.es/def/censo-vehiculos#> .
+@prefix edintkos: <https://edint.es/kos/> .
+@prefix badge:    <https://edint.es/kos/VehicleEnvironmentalBadge/> .
+@prefix permstat: <https://edint.es/kos/VehiclePermitStatus/> .
+@prefix permt:    <https://edint.es/kos/VehiclePermitType/> .
+@prefix permp:    <https://edint.es/kos/VehiclePermitPeriodicity/> .
+@prefix propul:   <https://edint.es/kos/VehiclePropulsionType/> .
+@prefix vtype:    <https://edint.es/kos/VehicleType/> .
+
+# ===================================================================
+# KOS concept schemes (referencia a los KOS reales del repositorio)
+# ===================================================================
+
+edintkos:VehicleEnvironmentalBadge a skos:ConceptScheme ;
+    rdfs:label "Vehicle environmental badge"@en, "Tipo de distintivo medioambiental"@es .
+
+edintkos:VehiclePermitStatus a skos:ConceptScheme ;
+    rdfs:label "Vehicle permit status"@en, "Estado de autorización de vehículo"@es .
+
+edintkos:VehiclePermitType a skos:ConceptScheme ;
+    rdfs:label "Vehicle permit type"@en, "Tipo de autorización de vehículo"@es .
+
+edintkos:VehiclePermitPeriodicity a skos:ConceptScheme ;
+    rdfs:label "Vehicle permit periodicity"@en, "Periodicidad de autorización de vehículo"@es .
+
+edintkos:VehiclePropulsionType a skos:ConceptScheme ;
+    rdfs:label "Vehicle propulsion type"@en, "Tipo de propulsión de vehículo"@es .
+
+edintkos:VehicleType a skos:ConceptScheme ;
+    rdfs:label "Vehicle type"@en, "Tipo de vehículo"@es .
+
+# ===================================================================
+# Vehículo 1: Turismo eléctrico con distintivo Zero Emissions
+#   Propietario: persona física (Ana García)
+#   Autorización: Residente, activa, anual
+# ===================================================================
+
+ex:veh1 a edintveh:Vehicle ;
+    rdfs:label "Seat Leon"@es ;
+    edintveh:licensePlateNumber "4523 MKB" ;
+    edintveh:vehicleType vtype:Car ;
+    edintveh:propulsionType propul:Electric ;
+    edintveh:environmentalBadge badge:ZeroEmissions ;
+    edintveh:registeredOwner ex:propietario1 .
+
+ex:propietario1 a schema:Person, edintveh:Owner ;
+    rdfs:label "Ana García López"@es ;
+    schema:name "Ana García López" .
+
+ex:auto1 a edintveh:Permit ;
+    rdfs:label "Permiso residente zona norte"@es ;
+    edintveh:permitType permt:Resident ;
+    edintveh:permitStatus permstat:Active ;
+    edintveh:permitPeriodicity permp:Annual ;
+    edintveh:beginningDate "2025-01-01"^^xsd:date ;
+    edintveh:endingDate "2025-12-31"^^xsd:date ;
+    edintveh:activationDate "2025-01-01"^^xsd:date ;
+    edintveh:authorisesVehicle ex:veh1 ;
+    edintveh:authorisesInSegment ex:tramo1 ;
+    edintveh:authorisesInZone ex:zona1 ;
+    edintveh:permitOwner ex:propietario1 .
+
+# ===================================================================
+# Vehículo 2: Camión diésel sin distintivo ambiental (vehículo viejo)
+#   Propietario: organización (Logística Madrid S.L.)
+#   Autorización: Comercial-Industrial, activa, mensual
+# ===================================================================
+
+ex:veh2 a edintveh:Vehicle ;
+    rdfs:label "Volvo FH16"@es ;
+    edintveh:licensePlateNumber "7890 BHF" ;
+    edintveh:vehicleType vtype:Truck ;
+    edintveh:propulsionType propul:Diesel ;
+    edintveh:registeredOwner ex:propietario2 .
+
+ex:propietario2 a schema:Organization, edintveh:Owner ;
+    rdfs:label "Logística Madrid S.L."@es ;
+    schema:name "Logística Madrid S.L." .
+
+ex:auto2 a edintveh:Permit ;
+    rdfs:label "Permiso comercial industria centro"@es ;
+    edintveh:permitType permt:CommercialIndustrial ;
+    edintveh:permitStatus permstat:Active ;
+    edintveh:permitPeriodicity permp:Annual ;
+    edintveh:beginningDate "2025-09-01"^^xsd:date ;
+    edintveh:endingDate "2026-08-31"^^xsd:date ;
+    edintveh:activationDate "2025-09-01"^^xsd:date ;
+    edintveh:authorisesVehicle ex:veh2 ;
+    edintveh:authorisesInSegment ex:tramo1 ;
+    edintveh:authorisesInZone ex:zona1 ;
+    edintveh:permitOwner ex:propietario2 .
+
+# ===================================================================
+# Vehículo 3: Furgoneta híbrida enchufable con distintivo ECO
+#   Propietario: persona física (Carlos Ruiz)
+#   Autorización: Temporal, rechazada, mensual
+#   Nota: mismo titular vehículo y permiso (VEH24 requiere distinto)
+# ===================================================================
+
+ex:veh3 a edintveh:Vehicle ;
+    rdfs:label "Citroën Berlingo"@es ;
+    edintveh:licensePlateNumber "1234 PDC" ;
+    edintveh:vehicleType vtype:Van ;
+    edintveh:propulsionType propul:PluginHybrid ;
+    edintveh:environmentalBadge badge:ECO ;
+    edintveh:registeredOwner ex:propietario3 .
+
+ex:propietario3 a schema:Person, edintveh:Owner ;
+    rdfs:label "Carlos Ruiz Martín"@es ;
+    schema:name "Carlos Ruiz Martín" .
+
+ex:auto3 a edintveh:Permit ;
+    rdfs:label "Permiso temporal visitas"@es ;
+    edintveh:permitType permt:Temporal ;
+    edintveh:permitStatus permstat:Rejected ;
+    edintveh:permitPeriodicity permp:Monthly ;
+    edintveh:beginningDate "2025-06-01"^^xsd:date ;
+    edintveh:endingDate "2025-08-31"^^xsd:date ;
+    edintveh:activationDate "2025-06-01"^^xsd:date ;
+    edintveh:authorisesVehicle ex:veh3 ;
+    edintveh:permitOwner ex:propietario3 .
+
+# ===================================================================
+# Vehículo 4: Ambulancia con distintivo B
+#   Propietario del vehículo: organización (Hospital General)
+#   Titular de autorización: persona diferente (Dra. Marta López) — VEH24
+# ===================================================================
+
+ex:veh4 a edintveh:Vehicle ;
+    rdfs:label "Mercedes Sprinter"@es ;
+    edintveh:licensePlateNumber "5678 LKM" ;
+    edintveh:vehicleType vtype:Ambulance ;
+    edintveh:propulsionType propul:Diesel ;
+    edintveh:environmentalBadge badge:B ;
+    edintveh:registeredOwner ex:propietario4 .
+
+ex:propietario4 a schema:Organization, edintveh:Owner ;
+    rdfs:label "Hospital General"@es ;
+    schema:name "Hospital General" .
+
+ex:propietario5 a schema:Person, edintveh:Owner ;
+    rdfs:label "Dra. Marta López Fernández"@es ;
+    schema:name "Marta López Fernández" .
+
+ex:auto4 a edintveh:Permit ;
+    rdfs:label "Permiso servicios sanitarios"@es ;
+    edintveh:permitType permt:MedicalServices ;
+    edintveh:permitStatus permstat:Active ;
+    edintveh:permitPeriodicity permp:Annual ;
+    edintveh:beginningDate "2025-03-01"^^xsd:date ;
+    edintveh:endingDate "2026-02-28"^^xsd:date ;
+    edintveh:activationDate "2025-03-01"^^xsd:date ;
+    edintveh:authorisesVehicle ex:veh4 ;
+    edintveh:authorisesInSegment ex:tramo2 ;
+    edintveh:authorisesInZone ex:zona2 ;
+    edintveh:permitOwner ex:propietario5 .
+
+# ===================================================================
+# Vehículo 5: Vehículo de gasolina sin distintivo ambiental
+#   Propietario: persona (Javier Moreno)
+#   Autorización: Taller, activa, anual
+#   Para VEH27: sin environmentalBadge y con permiso activo
+# ===================================================================
+
+ex:veh5 a edintveh:Vehicle ;
+    rdfs:label "Renault Clio"@es ;
+    edintveh:licensePlateNumber "9012 XRT" ;
+    edintveh:vehicleType vtype:Car ;
+    edintveh:propulsionType propul:UnleadedGasoline ;
+    edintveh:registeredOwner ex:propietario6 .
+
+ex:propietario6 a schema:Person, edintveh:Owner ;
+    rdfs:label "Javier Moreno Sánchez"@es ;
+    schema:name "Javier Moreno Sánchez" .
+
+ex:auto5 a edintveh:Permit ;
+    rdfs:label "Permiso taller centro"@es ;
+    edintveh:permitType permt:Garage ;
+    edintveh:permitStatus permstat:Active ;
+    edintveh:permitPeriodicity permp:Annual ;
+    edintveh:beginningDate "2025-04-01"^^xsd:date ;
+    edintveh:endingDate "2026-03-31"^^xsd:date ;
+    edintveh:activationDate "2025-04-01"^^xsd:date ;
+    edintveh:authorisesVehicle ex:veh5 ;
+    edintveh:authorisesInSegment ex:tramo2 ;
+    edintveh:authorisesInZone ex:zona2 ;
+    edintveh:permitOwner ex:propietario6 .
+
+# ===================================================================
+# Vehículo 6: Autobús híbrido no enchufable con distintivo C
+#   Propietario: empresa de transporte (Transportes Metropolitanos)
+#   Autorización: Servicios esenciales, activa, anual
+# ===================================================================
+
+ex:veh6 a edintveh:Vehicle ;
+    rdfs:label "Irizar i6"@es ;
+    edintveh:licensePlateNumber "3456 JPL" ;
+    edintveh:vehicleType vtype:Bus ;
+    edintveh:propulsionType propul:NonPluginHybrid ;
+    edintveh:environmentalBadge badge:C ;
+    edintveh:registeredOwner ex:propietario7 .
+
+ex:propietario7 a schema:Organization, edintveh:Owner ;
+    rdfs:label "Transportes Metropolitanos S.A."@es ;
+    schema:name "Transportes Metropolitanos S.A." .
+
+ex:auto6 a edintveh:Permit ;
+    rdfs:label "Permiso servicios esenciales línea 3"@es ;
+    edintveh:permitType permt:EssentialServices ;
+    edintveh:permitStatus permstat:Active ;
+    edintveh:permitPeriodicity permp:Annual ;
+    edintveh:beginningDate "2025-07-01"^^xsd:date ;
+    edintveh:endingDate "2026-06-30"^^xsd:date ;
+    edintveh:activationDate "2025-07-01"^^xsd:date ;
+    edintveh:authorisesVehicle ex:veh6 ;
+    edintveh:authorisesInSegment ex:tramo1 ;
+    edintveh:authorisesInZone ex:zona1 ;
+    edintveh:permitOwner ex:propietario7 .
+
+# ===================================================================
+# Tramos de vía (StreetSection) para VEH04, VEH06, VEH22
+# ===================================================================
+
+ex:tramo1 a edinttraf:StreetSection ;
+    rdfs:label "Calle Gran Vía, 1-100"@es .
+
+ex:tramo2 a edinttraf:StreetSection ;
+    rdfs:label "Paseo del Prado, 1-50"@es .
+
+# ===================================================================
+# Zonas regulatorias (TrafficControlledZone) para VEH05, VEH17, VEH18,
+#   VEH25, VEH26
+# ===================================================================
+
+ex:zona1 a edintzone:TrafficControlledZone ;
+    rdfs:label "Zona ZBE Centro"@es .
+
+ex:zona2 a edintzone:TrafficControlledZone ;
+    rdfs:label "Zona Regulatoria Sur"@es .
