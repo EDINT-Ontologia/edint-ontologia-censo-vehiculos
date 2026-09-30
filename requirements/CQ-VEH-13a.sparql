@@ -1,0 +1,14 @@
+# VEH13a: Solo en español (variante de VEH13)
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX edintkos: <https://edint.es/kos/>
+
+SELECT ?permitType ?labelEs
+WHERE {
+    ?permitType a skos:Concept ;
+                skos:inScheme edintkos:VehiclePermitType ;
+                skos:prefLabel ?labelEs .
+
+    FILTER(LANG(?labelEs) = "es")
+}
+ORDER BY ?labelEs

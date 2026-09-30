@@ -1,0 +1,17 @@
+# VEH17a: Devolviendo etiqueta legible del distintivo (variante de VEH17)
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?vehicle ?zone ?badge ?badgeLabel
+WHERE {
+  ?permit a edintveh:Permit ;
+          edintveh:authorisesVehicle ?vehicle ;
+          edintveh:authorisesInZone  ?zone .
+
+  ?vehicle edintveh:environmentalBadge ?badge .
+  FILTER (?badge = <URI_DEL_DISTINTIVO>)
+
+  OPTIONAL { ?badge skos:prefLabel ?badgeLabel . }
+}
+ORDER BY LCASE(STR(COALESCE(?badgeLabel, STR(?badge)))) ?zone ?vehicle

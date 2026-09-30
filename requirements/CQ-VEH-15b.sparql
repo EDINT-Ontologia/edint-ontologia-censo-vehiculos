@@ -1,0 +1,18 @@
+# VEH15b: Permisos por etiqueta de su estado, p. ej. "Activo" (variante de VEH15)
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX edintkos: <https://edint.es/kos/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?permit
+WHERE {
+    ?permit a edintveh:Permit ;
+            edintveh:permitStatus ?status .
+
+    ?status skos:inScheme edintkos:VehiclePermitStatus ;
+            skos:prefLabel ?label .
+
+    FILTER (LCASE(STR(?label)) = LCASE("Activo"))
+    # Si quieres forzar idioma español:
+    # FILTER (LANG(?label) = "es")
+}

@@ -1,0 +1,24 @@
+# VEH18a: Por etiqueta del distintivo (sin conocer su URI), todas las zonas (variante de VEH18)
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX edintkos: <https://edint.es/kos/>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?vehicleType ?vehicleTypeLabel
+WHERE {
+  ?permit a edintveh:Permit ;
+          edintveh:authorisesVehicle ?vehicle ;
+          edintveh:authorisesInZone  ?zone .
+
+  ?vehicle edintveh:environmentalBadge ?badge ;
+           edintveh:vehicleType        ?vehicleType .
+
+  ?badge skos:inScheme edintkos:VehicleEnvironmentalBadge ;
+         skos:prefLabel ?badgeLabel .
+  FILTER (LCASE(STR(?badgeLabel)) = LCASE("ECO"))
+  # Para forzar español:
+  # FILTER (LANG(?badgeLabel) = "es")
+
+  OPTIONAL { ?vehicleType skos:prefLabel ?vehicleTypeLabel . }
+}
+ORDER BY LCASE(STR(COALESCE(?vehicleTypeLabel, STR(?vehicleType))))

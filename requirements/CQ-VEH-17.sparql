@@ -1,0 +1,13 @@
+# VEH17: ¿Qué vehículos con un determinado distintivo ambiental estan autorizados en una zona regulada?
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+
+SELECT DISTINCT ?vehicle ?zone
+WHERE {
+  ?permit a edintveh:Permit ;
+          edintveh:authorisesVehicle ?vehicle ;
+          edintveh:authorisesInZone  ?zone .
+
+  ?vehicle edintveh:environmentalBadge <URI_DEL_DISTINTIVO> .
+}
+ORDER BY ?zone ?vehicle

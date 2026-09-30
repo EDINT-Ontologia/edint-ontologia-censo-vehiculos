@@ -1,0 +1,13 @@
+# VEH15a: Estado de todas las autorizaciones (variante de VEH15)
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?permit ?status ?statusLabel
+WHERE {
+    ?permit a edintveh:Permit ;
+            edintveh:permitStatus ?status .
+
+    OPTIONAL { ?status skos:prefLabel ?statusLabel . }
+}
+ORDER BY ?permit
