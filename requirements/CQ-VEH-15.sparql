@@ -1,0 +1,11 @@
+# VEH15: ¿Cuál es el estado de una autorización?
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?status ?statusLabel
+WHERE {
+    <URI_DE_LA_AUTORIZACION> edintveh:permitStatus ?status .
+
+    OPTIONAL { ?status skos:prefLabel ?statusLabel . }
+}

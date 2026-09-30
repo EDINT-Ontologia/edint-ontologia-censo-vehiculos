@@ -1,0 +1,20 @@
+# VEH25a: Variante con comprobación de zona regulada (variante de VEH25)
+
+PREFIX edintveh:  <https://edint.es/def/censo-vehiculos#>
+PREFIX edintkos:  <https://edint.es/kos/>
+PREFIX edintzone: <https://edint.es/def/zona-regulatoria#>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+PREFIX edintvehiclepermittype: <https://edint.es/kos/VehiclePermitType/>
+
+SELECT ?permit ?vehicle ?zone
+WHERE {
+  # Permiso de tipo Comercial/Industrial
+  ?permit a edintveh:Permit ;
+          edintveh:permitType edintvehiclepermittype:CommercialIndustrial ;
+          edintveh:authorisesVehicle ?vehicle ;
+          edintveh:authorisesInZone ?zone .
+
+  # Garantizar que la zona es efectivamente una zona regulada
+  ?zone a edintzone:RegulatedZone .
+}
+ORDER BY ?zone ?permit

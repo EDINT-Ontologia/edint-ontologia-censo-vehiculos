@@ -1,0 +1,17 @@
+# VEH18b: Para una zona regulada específica, por URI (variante de VEH18)
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?vehicleType ?vehicleTypeLabel
+WHERE {
+  ?permit a edintveh:Permit ;
+          edintveh:authorisesVehicle ?vehicle ;
+          edintveh:authorisesInZone  <URI_DE_LA_ZONA> .
+
+  ?vehicle edintveh:environmentalBadge <URI_DEL_DISTINTIVO> ;
+           edintveh:vehicleType        ?vehicleType .
+
+  OPTIONAL { ?vehicleType skos:prefLabel ?vehicleTypeLabel . }
+}
+ORDER BY LCASE(STR(COALESCE(?vehicleTypeLabel, STR(?vehicleType))))
