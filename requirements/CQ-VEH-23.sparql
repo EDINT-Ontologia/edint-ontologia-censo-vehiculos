@@ -1,0 +1,13 @@
+# VEH23: ¿Quien es el titular de un vehículo y los de sus autorizaciones?
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+
+SELECT DISTINCT ?vehicle ?vehicleOwner ?permit ?permitOwner
+WHERE {
+  ?vehicle a edintveh:Vehicle ;
+           edintveh:registeredOwner ?vehicleOwner .
+
+  ?permit  a edintveh:Permit ;
+           edintveh:authorisesVehicle ?vehicle ;
+           edintveh:permitOwner ?permitOwner .
+}

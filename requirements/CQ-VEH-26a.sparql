@@ -1,0 +1,23 @@
+# VEH26a: Solo autorizaciones activas (variante de VEH26)
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX edintzone: <https://edint.es/def/zona-regulatoria#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?vehicle ?permit ?zone ?permitTypeLabel ?statusLabel
+WHERE {
+  ?permit rdf:type edintveh:Permit ;
+          edintveh:authorisesVehicle ?vehicle ;
+          edintveh:authorisesInZone ?zone ;
+          edintveh:permitType ?permitType ;
+          edintveh:permitStatus ?status .
+
+  ?zone rdf:type edintzone:RegulatedZone .
+  OPTIONAL { ?permitType skos:prefLabel ?permitTypeLabel . }
+  OPTIONAL { ?status skos:prefLabel ?statusLabel . }
+
+  # Filtro: status "activo" (ajusta al literal/idioma real de SKOS)
+  FILTER (BOUND(?statusLabel) && CONTAINS(LCASE(STR(?statusLabel)), "activo"))
+}
+ORDER BY ?vehicle ?permit

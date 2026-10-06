@@ -1,0 +1,18 @@
+# VEH16b: Periodicidad concreta, p. ej. "Mensual" (variante de VEH16)
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX edintkos: <https://edint.es/kos/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?permit
+WHERE {
+    ?permit a edintveh:Permit ;
+            edintveh:permitPeriodicity ?periodicity .
+
+    ?periodicity skos:inScheme edintkos:VehiclePermitPeriodicity ;
+                 skos:prefLabel ?label .
+
+    FILTER (LCASE(STR(?label)) = LCASE("Mensual"))
+    # Para forzar idioma:
+    # FILTER (LANG(?label) = "es")
+}

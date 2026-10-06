@@ -1,0 +1,10 @@
+# VEH5: ¿En que zona permite operar una autorización?
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX zone: <https://edint.es/def/zona-regulatoria#>
+
+SELECT ?permit ?zone
+WHERE {
+    ?permit a edintveh:Permit ;
+            edintveh:authorisesInZone ?zone .
+}

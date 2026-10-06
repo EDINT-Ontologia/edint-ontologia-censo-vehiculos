@@ -1,0 +1,18 @@
+# VEH18c: Versión agrupada: tipos de vehículo y recuento por distintivo y zona (variante de VEH18)
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?zone ?vehicleType ?vehicleTypeLabel (COUNT(DISTINCT ?vehicle) AS ?numVehicles)
+WHERE {
+  ?permit a edintveh:Permit ;
+          edintveh:authorisesVehicle ?vehicle ;
+          edintveh:authorisesInZone  ?zone .
+
+  ?vehicle edintveh:environmentalBadge <URI_DEL_DISTINTIVO> ;
+           edintveh:vehicleType        ?vehicleType .
+
+  OPTIONAL { ?vehicleType skos:prefLabel ?vehicleTypeLabel . }
+}
+GROUP BY ?zone ?vehicleType ?vehicleTypeLabel
+ORDER BY ?zone LCASE(STR(COALESCE(?vehicleTypeLabel, STR(?vehicleType))))
