@@ -1,7 +1,4 @@
-
-
 # VEH4: ¿En que tramo es válida una autorización?
-
 
 PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX trafico: <https://edint.es/def/trafico#>
@@ -11,14 +8,3 @@ WHERE {
     ?permit a edintveh:Permit ;
             edintveh:authorisesInSegment ?segment .
 }
-
-# Con autorización concreta:
-
-PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
-
-SELECT ?segment
-WHERE {
-    <URI_DE_LA_AUTORIZACION> edintveh:authorisesInSegment ?segment .
-}
-
-

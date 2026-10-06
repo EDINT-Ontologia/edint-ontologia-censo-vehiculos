@@ -1,0 +1,13 @@
+# VEH17c: Zona concreta + distintivo concreto, por URI (variante de VEH17)
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+
+SELECT DISTINCT ?vehicle
+WHERE {
+  ?permit a edintveh:Permit ;
+          edintveh:authorisesVehicle ?vehicle ;
+          edintveh:authorisesInZone  <URI_DE_LA_ZONA> .
+
+  ?vehicle edintveh:environmentalBadge <URI_DEL_DISTINTIVO> .
+}
+ORDER BY ?vehicle

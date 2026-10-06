@@ -1,0 +1,12 @@
+# VEH14b: Tipo de autorización por IRI del KOS, sin depender de labels (variante de VEH14)
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX edintvehiclepermittype: <https://edint.es/kos/VehiclePermitType/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?vehicle ?permitType ?label
+WHERE {
+  ?permit a edintveh:Permit ;
+          edintveh:permitType edintvehiclepermittype:Resident ;
+          edintveh:authorisesVehicle ?vehicle .
+}

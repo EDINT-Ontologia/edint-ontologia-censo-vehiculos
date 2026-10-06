@@ -1,0 +1,10 @@
+# VEH13b: Cuántos tipos (variante de VEH13)
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX edintkos: <https://edint.es/kos/>
+
+SELECT (COUNT(?permitType) AS ?numTypes)
+WHERE {
+    ?permitType a skos:Concept ;
+                skos:inScheme edintkos:VehiclePermitType .
+}

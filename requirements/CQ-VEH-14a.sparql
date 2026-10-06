@@ -1,0 +1,20 @@
+# VEH14a: Para un tipo de autorización referido por su etiqueta, p. ej. "Residente" (variante de VEH14)
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX edintkos: <https://edint.es/kos/>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?vehicle ?permitType ?label
+WHERE {
+  ?permit a edintveh:Permit ;
+          edintveh:permitType ?permitType ;
+          edintveh:authorisesVehicle ?vehicle .
+
+  ?permitType skos:inScheme edintkos:VehiclePermitType ;
+              skos:prefLabel ?label .
+
+  FILTER (LCASE(STR(?label)) = LCASE("Residente"))
+  # Si quieres forzar idioma español:
+  # FILTER (LANG(?label) = "es")
+}
+ORDER BY ?vehicle

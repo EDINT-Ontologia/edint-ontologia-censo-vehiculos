@@ -1,0 +1,13 @@
+# VEH25: ¿Que autorizaciones de tipo comercial dan permiso en una zona regulada?
+
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
+PREFIX edintvehiclepermittype: <https://edint.es/kos/VehiclePermitType/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?permit ?zone
+WHERE {
+  ?permit a edintveh:Permit ;
+          edintveh:permitType edintvehiclepermittype:CommercialIndustrial ;
+          edintveh:authorisesInArea ?zone .
+}
+ORDER BY ?zone ?permit
