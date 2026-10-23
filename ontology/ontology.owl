@@ -448,7 +448,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="es">Fecha de inicio del periodo de la autorización.</rdfs:comment>
         <rdfs:comment xml:lang="en">Starting date of the authorization period.</rdfs:comment>
-        <rdfs:label>Beginning Date</rdfs:label>
+        <rdfs:label xml:lang="en">Beginning Date</rdfs:label>
         <rdfs:label xml:lang="es">Fecha de inicio</rdfs:label>
     </owl:DatatypeProperty>
     
