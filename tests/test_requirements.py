@@ -92,11 +92,19 @@ def test_ids_csv_con_fichero():
     todo = _todo()
     if not todo or not todo[0]:
         pytest.skip("sin requirements.csv")
+    # En este repo los ficheros se llaman CQ-VEH-<n>.sparql y los IDs del CSV
+    # son VEH<n>: mapea VEH<n> -> CQ-VEH-<n> al comprobar las existencias.
+    def _ficheros_de(idv: str) -> set[str]:
+        norm = _normalizar(idv)
+        m = re.fullmatch(r"VEH(\d+)", norm, re.I)
+        if m:
+            return {norm, f"CQ-VEH-{m.group(1)}", f"CQ-VEH-{m.group(1).zfill(2)}"}
+        return {norm}
     presentes = {_normalizar(p.name.split(".")[0]) for p in todo[1]}
     sin_fichero = []
     for c in todo[0]:
         for idv in sorted(_ids_activos(c)):
-            if re.fullmatch(r"[A-Za-z]+\d+", idv) and _normalizar(idv) not in presentes:
+            if re.fullmatch(r"[A-Za-z]+\d+", idv) and not (_ficheros_de(idv) & presentes):
                 sin_fichero.append(f"{c.name}: {idv}")
     assert not sin_fichero, f"IDs en CSV sin fichero .sparql:\n  " + "\n  ".join(sin_fichero[:15])
 
