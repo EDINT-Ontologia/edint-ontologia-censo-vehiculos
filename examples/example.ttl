@@ -47,7 +47,7 @@ edintkos:VehicleType a skos:ConceptScheme ;
 
 ex:veh1 a edintveh:Vehicle ;
     rdfs:label "Seat Leon"@es ;
-    edintveh:licensePlateNumber "4523 MKB" ;
+    edintveh:licensePlateNumber "4523 MKB"^^xsd:string ;
     edintveh:vehicleType vtype:Car ;
     edintveh:propulsionType propul:Electric ;
     edintveh:environmentalBadge badge:ZeroEmissions ;
@@ -78,7 +78,7 @@ ex:auto1 a edintveh:Permit ;
 
 ex:veh2 a edintveh:Vehicle ;
     rdfs:label "Volvo FH16"@es ;
-    edintveh:licensePlateNumber "7890 BHF" ;
+    edintveh:licensePlateNumber "7890 BHF"^^xsd:string ;
     edintveh:vehicleType vtype:Truck ;
     edintveh:propulsionType propul:Diesel ;
     edintveh:registeredOwner ex:propietario2 .
@@ -109,7 +109,7 @@ ex:auto2 a edintveh:Permit ;
 
 ex:veh3 a edintveh:Vehicle ;
     rdfs:label "Citroën Berlingo"@es ;
-    edintveh:licensePlateNumber "1234 PDC" ;
+    edintveh:licensePlateNumber "1234 PDC"^^xsd:string ;
     edintveh:vehicleType vtype:Van ;
     edintveh:propulsionType propul:PluginHybrid ;
     edintveh:environmentalBadge badge:ECO ;
@@ -139,7 +139,7 @@ ex:auto3 a edintveh:Permit ;
 
 ex:veh4 a edintveh:Vehicle ;
     rdfs:label "Mercedes Sprinter"@es ;
-    edintveh:licensePlateNumber "5678 LKM" ;
+    edintveh:licensePlateNumber "5678 LKM"^^xsd:string ;
     edintveh:vehicleType vtype:Ambulance ;
     edintveh:propulsionType propul:Diesel ;
     edintveh:environmentalBadge badge:B ;
@@ -175,7 +175,7 @@ ex:auto4 a edintveh:Permit ;
 
 ex:veh5 a edintveh:Vehicle ;
     rdfs:label "Renault Clio"@es ;
-    edintveh:licensePlateNumber "9012 XRT" ;
+    edintveh:licensePlateNumber "9012 XRT"^^xsd:string ;
     edintveh:vehicleType vtype:Car ;
     edintveh:propulsionType propul:UnleadedGasoline ;
     edintveh:registeredOwner ex:propietario6 .
@@ -205,7 +205,7 @@ ex:auto5 a edintveh:Permit ;
 
 ex:veh6 a edintveh:Vehicle ;
     rdfs:label "Irizar i6"@es ;
-    edintveh:licensePlateNumber "3456 JPL" ;
+    edintveh:licensePlateNumber "3456 JPL"^^xsd:string ;
     edintveh:vehicleType vtype:Bus ;
     edintveh:propulsionType propul:NonPluginHybrid ;
     edintveh:environmentalBadge badge:C ;
