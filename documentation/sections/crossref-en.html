@@ -49,7 +49,7 @@ This section provides details for each class and property defined by Vehicle Cen
   <dl class="description">
    <dt>is in domain of</dt>
    <dd>
-    <a href="#activationDate" title="https://edint.es/def/censo-vehiculos#activationDate">Date of Activation</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#endingDate" title="https://edint.es/def/censo-vehiculos#endingDate">Ending date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#beginningDate" title="https://edint.es/def/censo-vehiculos#beginningDate">Fecha de inicio</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#authorisesInSegment" title="https://edint.es/def/censo-vehiculos#authorisesInSegment">authorises in segment</a> <sup class="type-op" title="object property">op</sup>, <a href="#authorisesVehicle" title="https://edint.es/def/censo-vehiculos#authorisesVehicle">authorises vehicle</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitOwner" title="https://edint.es/def/censo-vehiculos#permitOwner">permit owner</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitPeriodicity" title="https://edint.es/def/censo-vehiculos#permitPeriodicity">permit periodicity</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitStatus" title="https://edint.es/def/censo-vehiculos#permitStatus">permit status</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitType" title="https://edint.es/def/censo-vehiculos#permitType">permit type</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#beginningDate" title="https://edint.es/def/censo-vehiculos#beginningDate">Beginning Date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#activationDate" title="https://edint.es/def/censo-vehiculos#activationDate">Date of Activation</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#endingDate" title="https://edint.es/def/censo-vehiculos#endingDate">Ending date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#authorisesInSegment" title="https://edint.es/def/censo-vehiculos#authorisesInSegment">authorises in segment</a> <sup class="type-op" title="object property">op</sup>, <a href="#authorisesVehicle" title="https://edint.es/def/censo-vehiculos#authorisesVehicle">authorises vehicle</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitOwner" title="https://edint.es/def/censo-vehiculos#permitOwner">permit owner</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitPeriodicity" title="https://edint.es/def/censo-vehiculos#permitPeriodicity">permit periodicity</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitStatus" title="https://edint.es/def/censo-vehiculos#permitStatus">permit status</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitType" title="https://edint.es/def/censo-vehiculos#permitType">permit type</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -333,11 +333,30 @@ This section provides details for each class and property defined by Vehicle Cen
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
+  <li><a href="#beginningDate" title="https://edint.es/def/censo-vehiculos#beginningDate">Beginning Date</a></li>
   <li><a href="#activationDate" title="https://edint.es/def/censo-vehiculos#activationDate">Date of Activation</a></li>
   <li><a href="#endingDate" title="https://edint.es/def/censo-vehiculos#endingDate">Ending date</a></li>
-  <li><a href="#beginningDate" title="https://edint.es/def/censo-vehiculos#beginningDate">Fecha de inicio</a></li>
   <li><a href="#licensePlateNumber" title="https://edint.es/def/censo-vehiculos#licensePlateNumber">License Plate Number</a></li>
  </ul>
+ <div class="entity" id="beginningDate">
+  <h3>Beginning Date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://edint.es/def/censo-vehiculos#beginningDate</p>
+  <div class="comment">
+   <span class="markdown">Starting date of the authorization period.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>has domain</dt>
+    <dd>
+     <a href="#Permit" title="https://edint.es/def/censo-vehiculos#Permit">Permit</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>has range</dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="activationDate">
   <h3>Date of Activation<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://edint.es/def/censo-vehiculos#activationDate</p>
@@ -376,25 +395,6 @@ This section provides details for each class and property defined by Vehicle Cen
    </dl>
   </div>
  </div>
- <div class="entity" id="beginningDate">
-  <h3>Fecha de inicio<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://edint.es/def/censo-vehiculos#beginningDate</p>
-  <div class="comment">
-   <span class="markdown">Starting date of the authorization period.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>has domain</dt>
-    <dd>
-     <a href="#Permit" title="https://edint.es/def/censo-vehiculos#Permit">Permit</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>has range</dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="licensePlateNumber">
   <h3>License Plate Number<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://edint.es/def/censo-vehiculos#licensePlateNumber</p>
@@ -415,7 +415,7 @@ This section provides details for each class and property defined by Vehicle Cen
   </div>
  </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
- <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <h3 id="namedindividuals-headline" class="list">Named Individuals</h3>
  <ul class="hlist">
   <li><a href="#https://edint.es/kos/VehicleEnvironmentalBadge" title="https://edint.es/kos/VehicleEnvironmentalBadge"> <span>Vehicle Environmental Badge</span> </a></li>
   <li><a href="#https://edint.es/kos/VehiclePermitPeriodicity" title="https://edint.es/kos/VehiclePermitPeriodicity"> <span>Vehicle Permit Periodicity</span> </a></li>

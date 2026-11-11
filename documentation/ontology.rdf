@@ -27,13 +27,13 @@
         <terms:description xml:lang="es">El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales del censo o registro de vehículos. Su alcance se limita a los datos que pueden ser utilizados con los propósitos de cobro de impuestos por parte de las entidades locales o de gestión de la movilidad (permisos de aparcamiento, permisos de acceso a zonas específicas, etc.), que son parte de las funciones habituales de las entidades locales. Quedan fuera del alcance de la ontología otros aspectos relacionados con los vehículos, como pueden ser los datos de sus permisos de circulación, inspecciones técnicas, etc., que podrían ser objeto de una extensión de esta ontología o de su evolución en el futuro, si se considera relevante.</terms:description>
         <terms:description xml:lang="en">The purpose of this ontology is to provide a common vocabulary for representing the main entities and data of the vehicle census or registry. Its scope is limited to the data that may be used for purposes such as tax collection by local authorities or mobility management (parking permits, access permits to specific zones, etc.), which are part of the usual functions of local entities. Other aspects related to vehicles, such as data concerning driving permits, technical inspections, and similar information, are outside the scope of this ontology. These could be addressed through an extension of this ontology or through its future evolution, if considered relevant.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-10</terms:issued>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-10</terms:modified>
         <terms:publisher rdf:nodeID="genid6"/>
         <terms:title xml:lang="en">EDINT Vehicle Census Ontology</terms:title>
         <terms:title xml:lang="es">Ontología EDINT del Censo de Vehículos</terms:title>
         <vann:preferredNamespacePrefix>edintveh</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/censo-vehiculos#"/>
+        <vann:preferredNamespaceUri>https://edint.es/def/censo-vehiculos#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="es">Censo de Vehículos</rdfs:label>
         <rdfs:label xml:lang="en">Vehicle Census</rdfs:label>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-censo-vehiculos/releases/tag/v0.2.0"/>
@@ -582,8 +582,8 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="es">Fecha de inicio del periodo de la autorización.</rdfs:comment>
         <rdfs:comment xml:lang="en">Starting date of the authorization period.</rdfs:comment>
+        <rdfs:label xml:lang="en">Beginning Date</rdfs:label>
         <rdfs:label xml:lang="es">Fecha de inicio</rdfs:label>
-        <rdfs:label>Beginning Date</rdfs:label>
     </owl:DatatypeProperty>
     
 
