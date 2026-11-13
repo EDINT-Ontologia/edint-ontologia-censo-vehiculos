@@ -89,7 +89,9 @@ def slug() -> str:
 
 @pytest.fixture(scope="session")
 def grafo_ejemplos() -> Graph | None:
-    files = rdf_files("examples")
+    # Carga también kos/: muchas consultas de requirements/ filtran por
+    # skos:prefLabel/inScheme de conceptos KOS que solo existen allí.
+    files = rdf_files("examples") + rdf_files("kos")
     if not files:
         return None
     g = Graph()
