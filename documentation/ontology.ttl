@@ -27,7 +27,7 @@
                                         <http://purl.org/dc/terms/title> "EDINT Vehicle Census Ontology"@en ,
                                                                          "Ontología EDINT del Censo de Vehículos"@es ;
                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintveh" ;
-                                        <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                        <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/censo-vehiculos#" ;
                                         rdfs:label "Censo de Vehículos"@es ,
                                                    "Vehicle Census"@en ;
                                         owl:priorVersion <https://github.com/EDINT-Ontologia/edint-ontologia-censo-vehiculos/releases/tag/v0.2.0> ;
@@ -371,8 +371,8 @@ xsd:dateTime owl:equivalentClass xsd:date .
                rdfs:range xsd:date ;
                rdfs:comment "Fecha de inicio del periodo de la autorización."@es ,
                             "Starting date of the authorization period."@en ;
-               rdfs:label "Fecha de inicio"@es ,
-                          "Beginning Date" .
+               rdfs:label "Beginning Date"@en ,
+                          "Fecha de inicio"@es .
 
 
 ###  https://edint.es/def/censo-vehiculos#endingDate
