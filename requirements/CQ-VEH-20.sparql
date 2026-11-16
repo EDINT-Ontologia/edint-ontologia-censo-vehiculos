@@ -12,8 +12,8 @@ WHERE {
           edintveh:beginningDate ?beginningDate ;
           edintveh:activationDate ?activationDate .
 
-  FILTER ( ?beginningDate >= "FECHA_INICIO_INTERVALO"^^xsd:date &&
-           ?beginningDate <= "FECHA_FIN_INTERVALO"^^xsd:date )		## Fechas con formato: "Año-Mes-Día"
+  FILTER ( ?beginningDate >= "2025-01-01"^^xsd:date &&
+           ?beginningDate <= "2025-12-31"^^xsd:date )		## Fechas con formato: "Año-Mes-Día"
 }
 ORDER BY ?beginningDate ?permit
 

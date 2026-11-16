@@ -13,7 +13,7 @@ SELECT ?vehicle
        ?permitOwner
        (COALESCE(?permitOwnerLabel, STR(?permitOwner)) AS ?permitOwnerName)
 WHERE {
-  VALUES ?vehicle { <vehicle_URI> }
+  VALUES ?vehicle { <https://example.org/recurso/veh1> }
 
   # Titular registrado del vehículo
   OPTIONAL {
