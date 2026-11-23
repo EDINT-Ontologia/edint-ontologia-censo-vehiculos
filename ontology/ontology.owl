@@ -75,7 +75,7 @@
         <dcterms:title xml:lang="en">EDINT Vehicle Census Ontology</dcterms:title>
         <dcterms:title xml:lang="es">Ontología EDINT del Censo de Vehículos</dcterms:title>
         <vann:preferredNamespacePrefix>edintveh</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/censo-vehiculos#"/>
+        <vann:preferredNamespaceUri>https://edint.es/def/censo-vehiculos#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="es">Censo de Vehículos</rdfs:label>
         <rdfs:label xml:lang="en">Vehicle Census</rdfs:label>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-censo-vehiculos/releases/tag/v0.2.0"/>
