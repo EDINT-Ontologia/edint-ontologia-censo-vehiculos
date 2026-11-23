@@ -70,11 +70,6 @@ edintvehiclepropulsiontype:LiquefiedNaturalGas a skos:Concept;
   skos:prefLabel "Liquefied natural gas"@en ;
   skos:prefLabel "Gas natural licuado"@es .
 
-edintvehiclepropulsiontype:Diesel a skos:Concept;
-  skos:inScheme edintkos:VehiclePropulsionType;
-  skos:prefLabel "Diesel"@en ;
-  skos:prefLabel "Diésel"@es .
-
 edintvehiclepropulsiontype:PluginHybrid a skos:Concept;
   skos:inScheme edintkos:VehiclePropulsionType;
   skos:prefLabel "Plug-in hybrid"@en ;
