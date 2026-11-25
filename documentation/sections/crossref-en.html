@@ -49,7 +49,7 @@ This section provides details for each class and property defined by Vehicle Cen
   <dl class="description">
    <dt>is in domain of</dt>
    <dd>
-    <a href="#beginningDate" title="https://edint.es/def/censo-vehiculos#beginningDate">Beginning Date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#activationDate" title="https://edint.es/def/censo-vehiculos#activationDate">Date of Activation</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#endingDate" title="https://edint.es/def/censo-vehiculos#endingDate">Ending date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#authorisesInSegment" title="https://edint.es/def/censo-vehiculos#authorisesInSegment">authorises in segment</a> <sup class="type-op" title="object property">op</sup>, <a href="#authorisesVehicle" title="https://edint.es/def/censo-vehiculos#authorisesVehicle">authorises vehicle</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitOwner" title="https://edint.es/def/censo-vehiculos#permitOwner">permit owner</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitPeriodicity" title="https://edint.es/def/censo-vehiculos#permitPeriodicity">permit periodicity</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitStatus" title="https://edint.es/def/censo-vehiculos#permitStatus">permit status</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitType" title="https://edint.es/def/censo-vehiculos#permitType">permit type</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#beginningDate" title="https://edint.es/def/censo-vehiculos#beginningDate">Beginning Date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#activationDate" title="https://edint.es/def/censo-vehiculos#activationDate">Date of Activation</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#endingDate" title="https://edint.es/def/censo-vehiculos#endingDate">Ending date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#authorisesInSegment" title="https://edint.es/def/censo-vehiculos#authorisesInSegment">authorises in segment</a> <sup class="type-op" title="object property">op</sup>, <a href="#authorisesVehicle" title="https://edint.es/def/censo-vehiculos#authorisesVehicle">authorises vehicle</a> <sup class="type-op" title="object property">op</sup>, <a href="#authorizesInArea" title="https://edint.es/def/censo-vehiculos#authorizesInArea">authorizes in area</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitOwner" title="https://edint.es/def/censo-vehiculos#permitOwner">permit owner</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitPeriodicity" title="https://edint.es/def/censo-vehiculos#permitPeriodicity">permit periodicity</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitStatus" title="https://edint.es/def/censo-vehiculos#permitStatus">permit status</a> <sup class="type-op" title="object property">op</sup>, <a href="#permitType" title="https://edint.es/def/censo-vehiculos#permitType">permit type</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -72,6 +72,12 @@ This section provides details for each class and property defined by Vehicle Cen
   <div class="comment">
    <span class="markdown">Area to which a particular regulation or policy applies.</span>
   </div>
+  <dl class="description">
+   <dt>is in range of</dt>
+   <dd>
+    <a href="#authorizesInArea" title="https://edint.es/def/censo-vehiculos#authorizesInArea">authorizes in area</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
  </div>
  <div class="entity" id="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">
   <h3>Tramo<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -131,6 +137,7 @@ This section provides details for each class and property defined by Vehicle Cen
  <ul class="hlist">
   <li><a href="#authorisesInSegment" title="https://edint.es/def/censo-vehiculos#authorisesInSegment">authorises in segment</a></li>
   <li><a href="#authorisesVehicle" title="https://edint.es/def/censo-vehiculos#authorisesVehicle">authorises vehicle</a></li>
+  <li><a href="#authorizesInArea" title="https://edint.es/def/censo-vehiculos#authorizesInArea">authorizes in area</a></li>
   <li><a href="#environmentalBadge" title="https://edint.es/def/censo-vehiculos#environmentalBadge">environmental badge</a></li>
   <li><a href="#permitOwner" title="https://edint.es/def/censo-vehiculos#permitOwner">permit owner</a></li>
   <li><a href="#permitPeriodicity" title="https://edint.es/def/censo-vehiculos#permitPeriodicity">permit periodicity</a></li>
@@ -174,6 +181,25 @@ This section provides details for each class and property defined by Vehicle Cen
     <dt>has range</dt>
     <dd>
      <a href="#Vehicle" title="https://edint.es/def/censo-vehiculos#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="authorizesInArea">
+  <h3>authorizes in area<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://edint.es/def/censo-vehiculos#authorizesInArea</p>
+  <div class="comment">
+   <span class="markdown">Represents the relationship between the authorization and the regulated zone that can be accessed.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>has domain</dt>
+    <dd>
+     <a href="#Permit" title="https://edint.es/def/censo-vehiculos#Permit">Permit</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>has range</dt>
+    <dd>
+     <a href="#https://edint.es/def/zona-regulatoria#RegulatedZone" title="https://edint.es/def/zona-regulatoria#RegulatedZone">Regulated Zone</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -417,6 +443,7 @@ This section provides details for each class and property defined by Vehicle Cen
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
  <h3 id="namedindividuals-headline" class="list">Named Individuals</h3>
  <ul class="hlist">
+  <li><a href="#https://oeg.fi.upm.es/" title="https://oeg.fi.upm.es/"> <span>https://oeg.fi.upm.es/</span> </a></li>
   <li><a href="#https://edint.es/kos/VehicleEnvironmentalBadge" title="https://edint.es/kos/VehicleEnvironmentalBadge"> <span>Vehicle Environmental Badge</span> </a></li>
   <li><a href="#https://edint.es/kos/VehiclePermitPeriodicity" title="https://edint.es/kos/VehiclePermitPeriodicity"> <span>Vehicle Permit Periodicity</span> </a></li>
   <li><a href="#https://edint.es/kos/VehiclePermitStatus" title="https://edint.es/kos/VehiclePermitStatus"> <span>Vehicle Permit Status</span> </a></li>
@@ -424,6 +451,10 @@ This section provides details for each class and property defined by Vehicle Cen
   <li><a href="#https://edint.es/kos/VehiclePropulsionType" title="https://edint.es/kos/VehiclePropulsionType"> <span>Vehicle Propulsion Type</span> </a></li>
   <li><a href="#https://edint.es/kos/VehicleType" title="https://edint.es/kos/VehicleType"> <span>Vehicle Type</span> </a></li>
  </ul>
+ <div class="entity" id="https://oeg.fi.upm.es/">
+  <h3>https://oeg.fi.upm.es/<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://oeg.fi.upm.es/</p>
+ </div>
  <div class="entity" id="https://edint.es/kos/VehicleEnvironmentalBadge">
   <h3>Vehicle Environmental Badge<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://edint.es/kos/VehicleEnvironmentalBadge</p>

@@ -1,7 +1,7 @@
 [ {
   "@id" : "_:genid1",
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Daniel Doña"
+    "@value" : "Edna Ruckhaus"
   } ],
   "https://schema.org/affiliation" : [ {
     "@id" : "https://oeg.fi.upm.es/"
@@ -56,7 +56,7 @@
 }, {
   "@id" : "_:genid2",
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Edna Ruckhaus"
+    "@value" : "Daniel Doña"
   } ],
   "https://schema.org/affiliation" : [ {
     "@id" : "https://oeg.fi.upm.es/"
@@ -112,7 +112,7 @@
 }, {
   "@id" : "_:genid3",
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Lucía Sánchez"
+    "@value" : "Oscar Corcho"
   } ],
   "https://schema.org/affiliation" : [ {
     "@id" : "https://oeg.fi.upm.es/"
@@ -137,6 +137,49 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid36",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://www.femp.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "FEMP"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@value" : "Federación Española de Municipios y Provincias"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SAREF4AUTO"
+  }, {
+    "@language" : "es",
+    "@value" : "SAREF4AUTO"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://saref.etsi.org/saref4auto/Vehicle"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Traffic (edinttraf)"
+  }, {
+    "@language" : "es",
+    "@value" : "Tráfico (edinttraf)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://edint.es/def/trafico"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Lucía Sánchez"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
   "@id" : "_:genid4",
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Maria del Socorro Bernardos"
@@ -145,9 +188,41 @@
     "@id" : "https://oeg.fi.upm.es/"
   } ]
 }, {
-  "@id" : "_:genid5",
+  "@id" : "_:genid40",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Maria del Socorro Bernardos"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid41",
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Oscar Corcho"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Daniel Doña"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Edna Ruckhaus"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Lucía Sánchez"
   } ],
   "https://schema.org/affiliation" : [ {
     "@id" : "https://oeg.fi.upm.es/"
@@ -167,18 +242,6 @@
   "@id" : "_:genid7",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "SAREF4AUTO"
-  }, {
-    "@language" : "en",
-    "@value" : "SAREF4AUTO"
-  } ],
-  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "https://saref.etsi.org/saref4auto/Vehicle"
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
     "@value" : "Tráfico (edinttraf)"
   }, {
     "@language" : "en",
@@ -186,6 +249,18 @@
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
     "@id" : "https://edint.es/def/trafico"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "SAREF4AUTO"
+  }, {
+    "@language" : "en",
+    "@value" : "SAREF4AUTO"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://saref.etsi.org/saref4auto/Vehicle"
   } ]
 }, {
   "@id" : "_:genid9",
@@ -276,6 +351,9 @@
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/homepage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -516,6 +594,29 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://edint.es/def/censo-vehiculos#Vehicle"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/censo-vehiculos#authorizesInArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona la autorización con la zona regulada que puede acceder."
+  }, {
+    "@language" : "en",
+    "@value" : "Represents the relationship between the authorization and the regulated zone that can be accessed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/censo-vehiculos#Permit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "authorizes in area"
+  }, {
+    "@language" : "es",
+    "@value" : "autoriza en zona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://edint.es/def/zona-regulatoria#RegulatedZone"
   } ]
 }, {
   "@id" : "https://edint.es/def/censo-vehiculos#beginningDate",
@@ -828,6 +929,7 @@
   } ]
 }, {
   "@id" : "https://oeg.fi.upm.es/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Ontology Engineering Group, UPM"
   } ]

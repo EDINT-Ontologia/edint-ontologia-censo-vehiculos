@@ -42,32 +42,32 @@
                                         <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 ,
                                                                                         _:genid8 .
 
-_:genid1 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid2 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid3 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
 _:genid4 <http://xmlns.com/foaf/0.1/name> "Maria del Socorro Bernardos" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid5 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" ;
+_:genid5 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
 _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
           <http://xmlns.com/foaf/0.1/name> "FEMP" ;
           <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
 
-_:genid7 rdfs:label "SAREF4AUTO"@en ,
-                     "SAREF4AUTO"@es ;
-          <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/saref4auto/Vehicle> .
-
-_:genid8 rdfs:label "Traffic (edinttraf)"@en ,
+_:genid7 rdfs:label "Traffic (edinttraf)"@en ,
                      "Tráfico (edinttraf)"@es ;
           <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/trafico> .
+
+_:genid8 rdfs:label "SAREF4AUTO"@en ,
+                     "SAREF4AUTO"@es ;
+          <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/saref4auto/Vehicle> .
 
 #################################################################
 #    Annotation properties
@@ -227,6 +227,16 @@ xsd:dateTime owl:equivalentClass xsd:date .
                                 "It identifies the vehicle for which the permit is issued"@en ;
                    rdfs:label "authorises vehicle"@en ,
                               "autoriza vehículo"@es .
+
+
+###  https://edint.es/def/censo-vehiculos#authorizesInArea
+:authorizesInArea rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Permit ;
+                  rdfs:range <https://edint.es/def/zona-regulatoria#RegulatedZone> ;
+                  rdfs:comment "Relaciona la autorización con la zona regulada que puede acceder."@es ,
+                               "Represents the relationship between the authorization and the regulated zone that can be accessed."@en ;
+                  rdfs:label "authorizes in area"@en ,
+                             "autoriza en zona"@es .
 
 
 ###  https://edint.es/def/censo-vehiculos#environmentalBadge
@@ -414,6 +424,10 @@ xsd:dateTime owl:equivalentClass xsd:date .
 <http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
 
 
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
+
+
 ###  https://edint.es/def/censo-vehiculos#Owner
 :Owner rdf:type owl:Class ;
        rdfs:subClassOf [ rdf:type owl:Class ;
@@ -513,11 +527,36 @@ xsd:dateTime owl:equivalentClass xsd:date .
                                             <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-#################################################################
-#    Annotations
-#################################################################
+###  https://oeg.fi.upm.es/
+<https://oeg.fi.upm.es/> rdf:type owl:NamedIndividual ;
+                         <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
 
-<https://oeg.fi.upm.es/> <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
 
+_:genid36 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
+          <http://xmlns.com/foaf/0.1/name> "FEMP" ;
+          <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
+
+_:genid37 rdfs:label "SAREF4AUTO"@en ,
+                      "SAREF4AUTO"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/saref4auto/Vehicle> .
+
+_:genid38 rdfs:label "Traffic (edinttraf)"@en ,
+                      "Tráfico (edinttraf)"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/trafico> .
+
+_:genid39 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid40 <http://xmlns.com/foaf/0.1/name> "Maria del Socorro Bernardos" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid41 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid42 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid43 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

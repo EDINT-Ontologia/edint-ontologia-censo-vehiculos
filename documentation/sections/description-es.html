@@ -10,7 +10,7 @@ Figura 1. Modelo conceptual principal de la ontología</figcaption></center></p>
     
 <p>Además de las propiedades de datos que pueden usarse para describir vehículos, y que evolucionarán de acuerdo con los casos de uso que utilicen esta ontología en el futuro, hay tres relaciones que caracterizan a los vehículos desde el punto de vista de los permisos para entra y/o aparcar en determinadas zonas. Son: <a href="#vehicleType">tipo de vehículo</a>, <a href="#propulsionType">tipo de propulsión</a> y <a href="#environmentalBadge">distintivo medioambiental</a>. Estas tres relaciones tienen como rango un esquema de conceptos SKOS: <a href="#https://edint.es/kos/VehicleType">Tipo de vehículo</a>, <a href="#https://edint.es/kos/VehiclePropulsionType">Tipo de propulsión</a> y <a href="#https://edint.es/kos/VehicleEnvironmentalBadge">Distintivo medioambiental</a>, respectivamente.</p>
     
-<p>De manera similar, la clase <a href="#Permit">Autorización</a> representa todas las autorizaciones que un vehículo puede tener, asociadas al <a href="#Vehicle">Vehículo</a> correspondiente mediante la relación <a href="#authorisesVehicle">autoriza a vehículo</a>,   para transitar a través de o aparcar en un tramo de vía o área del municipio (representado con las relaciones <a href="#authorisesInSegment">autoriza en tramo</a> y <a href="#authorisesInArea">autoriza en área</a>, respectivamente. Los rangos de estas relaciones pertenecen a otras ontologías en este ecosistema de ontologías, usadas para representar el tráfico y las áreas de un municipio.</p>
+<p>De manera similar, la clase <a href="#Permit">Autorización</a> representa todas las autorizaciones que un vehículo puede tener, asociadas al <a href="#Vehicle">Vehículo</a> correspondiente mediante la relación <a href="#authorisesVehicle">autoriza a vehículo</a>,   para transitar a través de o aparcar en un tramo de vía o área del municipio (representado con las relaciones <a href="#authorisesInSegment">autoriza en tramo</a> y <a href="#authorizesInArea">autoriza en área</a>, respectivamente. Los rangos de estas relaciones pertenecen a otras ontologías en este ecosistema de ontologías, usadas para representar el tráfico y las áreas de un municipio.</p>
 
 <p>Las autorizaciones también se describen con tres relaciones (<a href="#permitType">tipo de autorización</a>, <a href="#permitStatus">estado de  autorización</a> y <a href="#permitPeriodicity">periodicidad de autorización</a>), que también están conectadas con sus esquemas de conceptos SKOS correspondientes (<a href="#https://edint.es/kos/VehiclePermitType">Tipo de autorización</a>, <a href="#https://edint.es/kos/VehiclePermitStatus">Estado de autorización</a> y <a href="#https://edint.es/kos/VehiclePermitPeriodicity">Periodicidad de autorización</a>).</p>
     
@@ -37,7 +37,7 @@ Figura 1. Modelo conceptual principal de la ontología</figcaption></center></p>
   edintveh:permitType edintvehiclepermittype:CommercialIndustrial ;
   edintveh:permitStatus edintvehiclepermitstatus:Active ;
   edintveh:permitPeriodicity edintvehiclepermitperiodicity:Annual ;
-  edintveh:authorisesInArea &lt;https://example.org/recurso/ZBESalamanca ;
+  edintveh:authorizesInArea &lt;https://example.org/recurso/ZBESalamanca&gt; ;
   edintveh:authorisesVehicle &lt;https://example.org/recurso/Vehicle2 ;
   edintveh:permitOwner &lt;https://example.org/recurso/Company3 .
 
@@ -49,11 +49,11 @@ Figura 1. Modelo conceptual principal de la ontología</figcaption></center></p>
   edintveh:environmentalBadge edintvehicleenvironmentalbadge:B ;
   edintveh:registeredOwner &lt;https://example.org/recurso/Company3 .
 
-&lt;https://example.org/recurso/zona-de-bajas-emisiones/ZBESalamanca&gt; a edintzona:LowEmissionsZone :
+&lt;https://example.org/recurso/zona-de-bajas-emisiones/ZBESalamanca&gt; a edintzona:LowEmissionsZone ;
   dct:identifier "ZBESalamanca" ;
   rdfs:label "Zona de bajas emisiones de Salamanca" .
   
-&lt;https://example.org/recurso/organization/Company3&gt a schema:Organization ;
+&lt;https://example.org/recurso/organization/Company3&gt; a schema:Organization ;
   dct:identifier "Company3" ;
   rdfs:label "Example, Inc." .
 
