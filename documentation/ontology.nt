@@ -7,19 +7,19 @@
 <https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/created> "2026-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/creator> _:genid1 .
 _:genid1 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-_:genid1 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
 <https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/creator> _:genid2 .
 _:genid2 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-_:genid2 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
 <https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/creator> _:genid3 .
 _:genid3 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-_:genid3 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" .
 <https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/creator> _:genid4 .
 _:genid4 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid4 <http://xmlns.com/foaf/0.1/name> "Maria del Socorro Bernardos" .
 <https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/creator> _:genid5 .
 _:genid5 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-_:genid5 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" .
+_:genid5 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
 <https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/description> "El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales del censo o registro de vehículos. Su alcance se limita a los datos que pueden ser utilizados con los propósitos de cobro de impuestos por parte de las entidades locales o de gestión de la movilidad (permisos de aparcamiento, permisos de acceso a zonas específicas, etc.), que son parte de las funciones habituales de las entidades locales. Quedan fuera del alcance de la ontología otros aspectos relacionados con los vehículos, como pueden ser los datos de sus permisos de circulación, inspecciones técnicas, etc., que podrían ser objeto de una extensión de esta ontología o de su evolución en el futuro, si se considera relevante."@es .
 <https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/description> "The purpose of this ontology is to provide a common vocabulary for representing the main entities and data of the vehicle census or registry. Its scope is limited to the data that may be used for purposes such as tax collection by local authorities or mobility management (parking permits, access permits to specific zones, etc.), which are part of the usual functions of local entities. Other aspects related to vehicles, such as data concerning driving permits, technical inspections, and similar information, are outside the scope of this ontology. These could be addressed through an extension of this ontology or through its future evolution, if considered relevant."@en .
 <https://edint.es/def/censo-vehiculos> <http://purl.org/dc/terms/issued> "2026-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -45,13 +45,13 @@ _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
 <https://edint.es/def/censo-vehiculos> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
 <https://edint.es/def/censo-vehiculos> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
 <https://edint.es/def/censo-vehiculos> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
-_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/saref4auto/Vehicle> .
-_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF4AUTO"@es .
-_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF4AUTO"@en .
+_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/trafico> .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Tráfico (edinttraf)"@es .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Traffic (edinttraf)"@en .
 <https://edint.es/def/censo-vehiculos> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid8 .
-_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/trafico> .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "Tráfico (edinttraf)"@es .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "Traffic (edinttraf)"@en .
+_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/saref4auto/Vehicle> .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF4AUTO"@es .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF4AUTO"@en .
 # 
 # 
 # #################################################################
@@ -192,6 +192,15 @@ _:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "Traffic (edinttraf)"@en .
 <https://edint.es/def/censo-vehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the vehicle for which the permit is issued"@en .
 <https://edint.es/def/censo-vehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "authorises vehicle"@en .
 <https://edint.es/def/censo-vehiculos#authorisesVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "autoriza vehículo"@es .
+# 
+# https://edint.es/def/censo-vehiculos#authorizesInArea
+<https://edint.es/def/censo-vehiculos#authorizesInArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censo-vehiculos#authorizesInArea> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/censo-vehiculos#Permit> .
+<https://edint.es/def/censo-vehiculos#authorizesInArea> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/zona-regulatoria#RegulatedZone> .
+<https://edint.es/def/censo-vehiculos#authorizesInArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona la autorización con la zona regulada que puede acceder."@es .
+<https://edint.es/def/censo-vehiculos#authorizesInArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the relationship between the authorization and the regulated zone that can be accessed."@en .
+<https://edint.es/def/censo-vehiculos#authorizesInArea> <http://www.w3.org/2000/01/rdf-schema#label> "authorizes in area"@en .
+<https://edint.es/def/censo-vehiculos#authorizesInArea> <http://www.w3.org/2000/01/rdf-schema#label> "autoriza en zona"@es .
 # 
 # https://edint.es/def/censo-vehiculos#environmentalBadge
 <https://edint.es/def/censo-vehiculos#environmentalBadge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -397,6 +406,9 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # http://www.w3.org/2004/02/skos/core#ConceptScheme
 <http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://edint.es/def/censo-vehiculos#Owner
 <https://edint.es/def/censo-vehiculos#Owner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://edint.es/def/censo-vehiculos#Owner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
@@ -491,15 +503,27 @@ _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://edint.es/kos/VehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://edint.es/kos/VehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
+# https://oeg.fi.upm.es/
+<https://oeg.fi.upm.es/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://oeg.fi.upm.es/> <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
 # 
+_:genid36 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
+_:genid36 <http://xmlns.com/foaf/0.1/name> "FEMP" .
+_:genid36 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
+_:genid37 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF4AUTO"@en .
+_:genid37 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF4AUTO"@es .
+_:genid37 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/saref4auto/Vehicle> .
+_:genid38 <http://www.w3.org/2000/01/rdf-schema#label> "Traffic (edinttraf)"@en .
+_:genid38 <http://www.w3.org/2000/01/rdf-schema#label> "Tráfico (edinttraf)"@es .
+_:genid38 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/trafico> .
+_:genid39 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+_:genid39 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid40 <http://xmlns.com/foaf/0.1/name> "Maria del Socorro Bernardos" .
+_:genid40 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid41 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" .
+_:genid41 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid42 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+_:genid42 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid43 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+_:genid43 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

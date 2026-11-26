@@ -49,15 +49,15 @@
         <vocab:vocabularyLabel rdf:nodeID="genid8"/>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
-        <foaf:name>Daniel Doña</foaf:name>
-        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid2">
         <foaf:name>Edna Ruckhaus</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
+        <foaf:name>Daniel Doña</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
     <rdf:Description rdf:nodeID="genid3">
-        <foaf:name>Lucía Sánchez</foaf:name>
+        <foaf:name>Oscar Corcho</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid4">
@@ -65,7 +65,7 @@
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid5">
-        <foaf:name>Oscar Corcho</foaf:name>
+        <foaf:name>Lucía Sánchez</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid6">
@@ -74,14 +74,14 @@
         <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid7">
-        <rdfs:label xml:lang="en">SAREF4AUTO</rdfs:label>
-        <rdfs:label xml:lang="es">SAREF4AUTO</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="https://saref.etsi.org/saref4auto/Vehicle"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid8">
         <rdfs:label xml:lang="en">Traffic (edinttraf)</rdfs:label>
         <rdfs:label xml:lang="es">Tráfico (edinttraf)</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="https://edint.es/def/trafico"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid8">
+        <rdfs:label xml:lang="en">SAREF4AUTO</rdfs:label>
+        <rdfs:label xml:lang="es">SAREF4AUTO</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="https://saref.etsi.org/saref4auto/Vehicle"/>
     </rdf:Description>
     
 
@@ -376,6 +376,20 @@
     
 
 
+    <!-- https://edint.es/def/censo-vehiculos#authorizesInArea -->
+
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#authorizesInArea">
+        <rdfs:domain rdf:resource="https://edint.es/def/censo-vehiculos#Permit"/>
+        <rdfs:range rdf:resource="https://edint.es/def/zona-regulatoria#RegulatedZone"/>
+        <rdfs:comment xml:lang="es">Relaciona la autorización con la zona regulada que puede acceder.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents the relationship between the authorization and the regulated zone that can be accessed.</rdfs:comment>
+        <rdfs:label xml:lang="en">authorizes in area</rdfs:label>
+        <rdfs:label xml:lang="es">autoriza en zona</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://edint.es/def/censo-vehiculos#environmentalBadge -->
 
 
@@ -653,6 +667,13 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
     <!-- https://edint.es/def/censo-vehiculos#Owner -->
 
 
@@ -818,17 +839,46 @@
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- https://oeg.fi.upm.es/ -->
 
 
-    <rdf:Description rdf:about="https://oeg.fi.upm.es/">
+    <owl:NamedIndividual rdf:about="https://oeg.fi.upm.es/">
         <foaf:name>Ontology Engineering Group, UPM</foaf:name>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid36">
+        <foaf:homepage rdf:resource="https://www.femp.es/"/>
+        <foaf:name>FEMP</foaf:name>
+        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid37">
+        <rdfs:label xml:lang="en">SAREF4AUTO</rdfs:label>
+        <rdfs:label xml:lang="es">SAREF4AUTO</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="https://saref.etsi.org/saref4auto/Vehicle"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid38">
+        <rdfs:label xml:lang="en">Traffic (edinttraf)</rdfs:label>
+        <rdfs:label xml:lang="es">Tráfico (edinttraf)</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="https://edint.es/def/trafico"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid39">
+        <foaf:name>Lucía Sánchez</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid40">
+        <foaf:name>Maria del Socorro Bernardos</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid41">
+        <foaf:name>Oscar Corcho</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid42">
+        <foaf:name>Daniel Doña</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid43">
+        <foaf:name>Edna Ruckhaus</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
 </rdf:RDF>
 
